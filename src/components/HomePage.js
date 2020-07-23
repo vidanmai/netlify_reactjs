@@ -3,7 +3,14 @@ import { Typography, Button } from '@material-ui/core';
 
 class HomePage extends React.Component {
     render() {
-        return <h1>[HOME PAGE]</h1>;
+        return (
+            <div>
+                <Typography variant="h1">[TODO HOMEPAGE]</Typography>
+                <Button variant="contained" color="inherit">
+                    Hello world!
+                </Button>
+            </div>
+        );
     }
 }
 
