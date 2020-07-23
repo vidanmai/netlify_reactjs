@@ -1,26 +1,34 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import '../style/Nav.css';
+import { Button } from '@material-ui/core';
 
+// Style for Links
 const navStyle = {
-    color: 'blue'
+    color: "white",
+    listStyleType: 'none',
+    textDecoration: 'none'
 };
 
 class Nav extends React.Component {
     render() {
         return (
             <nav>
-                <ul>
+                <ul className="nav-links">
                     <Link style={navStyle} to="/">
-                        <li>Home</li>
+                        <Button variant="contained" color="secondary">Vector Restaurant</Button>
                     </Link>
-                    <Link style={navStyle} to="/about">
-                        <li>About</li>
+                    <Link style={navStyle} to="/meny">
+                        <li>Meny</li>
                     </Link>
-                    <Link style={navStyle} to="/blog">
-                        <li>Blog</li>
+                    <Link style={navStyle} to="/info">
+                        <li>Info</li>
                     </Link>
-                    <Link style={navStyle} to="/#">
-                        <li>Contact</li>
+                    <Link style={navStyle} to="/blogg">
+                        <li>Blogg</li>
+                    </Link>
+                    <Link style={navStyle} to="/kontakt">
+                        <li>Kontakt</li>
                     </Link>
                 </ul>
             </nav>
