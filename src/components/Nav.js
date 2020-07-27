@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../style/Nav.css';
-import { Button } from '@material-ui/core';
+import logo from '../img/bamboo_logo.png';
 
 // Style for Links
 const navStyle = {
@@ -10,13 +10,18 @@ const navStyle = {
     textDecoration: 'none'
 };
 
+
 class Nav extends React.Component {
+    
     render() {
         return (
-            <nav>
+            <nav class="navbar">
+                <Link style={navStyle} to="/" className="logo">
+                    <img src={logo} alt="restaurant logo" />
+                </Link>
                 <ul className="nav-links">
                     <Link style={navStyle} to="/">
-                        <Button variant="contained" color="secondary">Vector Restaurant</Button>
+                        <li>Hjem</li>
                     </Link>
                     <Link style={navStyle} to="/meny">
                         <li>Meny</li>

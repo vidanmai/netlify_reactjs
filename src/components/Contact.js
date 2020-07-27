@@ -1,12 +1,10 @@
 import React from 'react';
-import { Container } from '@material-ui/core';
 
 class Contact extends React.Component {
     render() {
         return (
             <div>
-                <Container>
-                    <h1><u>Kontakt</u></h1>
+                <h1><u>Kontakt</u></h1>
                     <ul>
                         <li>Mandag - Fredag</li>
                         <li><strong>12.00</strong>-22.00</li>
@@ -20,7 +18,6 @@ class Contact extends React.Component {
                     <p>
                         Adressen vår er Stockfleths gate 142b, 0612 Oslo. Kontakt oss på 22 70 41 20 eller kontakt@vectorrestaurant.no
                     </p>
-                </Container>
             </div>
         );
     }

@@ -1,20 +1,21 @@
 
 .landingPage {
-    background-image: linear-gradient(rgba(44, 4, 4, 0.116),
-                       rgba(66, 28, 28, 0.5)), url('../img/landingPage.jpg');
+    background-image: url('../img/bamboo_bg_5.jpg');
     background-size: cover;
-    background-attachment: fixed;
-    width: 100%;
-    height: 93vh;
+    width: 100vw;
+    height: 91vh;
+    filter: brightness(90%);
 }
 
 .hero {
-    position: fixed;
+    position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    border: 3px solid rgb(128, 0, 0);
-    padding: 10px;
-    color: honeydew;
-    background-color: #21212185;
+    transform: translate(-130%, -50%);
+    font-size: 22px;
+    font-weight: 100;
+    color: white;
+    border: 2px solid #e74222;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.466);
 }

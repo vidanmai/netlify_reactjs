@@ -1,16 +1,32 @@
 
 nav {
     width: 100%;
-    background-color: #212121;
+    background-color: #0a0a0a;
     overflow: auto;
     display: flex;
     justify-content: space-around;
-    height: 7vh;
+    font-size: 18px;
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
+    height: 9vh;
+    padding: 10px;
+    overflow-y: hidden;
 }
 
 .nav-links {
-    width: 40%;
+    width: 30%;
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.logo {
+    display: inline-block;
+    font-size: 22px;
+    margin-top: 0;
+    margin-left: 20px;
+}
+
+.logo img {
+    width: 180px;
+    height: auto;
 }
