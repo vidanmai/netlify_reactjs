@@ -17,7 +17,7 @@ nav {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    font-size: 12px;
+    font-size: 18px;
     margin-left: 30%;
 }
 
@@ -26,14 +26,14 @@ nav {
 }
 
 .logo img {
-    width: 110px;
+    width: 180px;
     height: auto;
 }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .logo img {
-
+        width: 140px;
     }
 
     .nav-links {
