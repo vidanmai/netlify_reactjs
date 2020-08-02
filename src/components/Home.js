@@ -13,9 +13,11 @@ class Home extends React.Component {
                         <br/>
                         <b>Adresse: </b>Stockfleths gate 53b, Norway 0598
                         <br/>
+                        <br/>
                         <b>Åpningstider: </b>Mandag-Fredag: 12:00 - 22:00
                         <br/>
-                        <pre>                         Lørdag og Søndag: 13:00 - 22:00</pre>
+                        Lørdag og Søndag: 13:00 - 22:00
+                        <br/>
                         <br/>
                         Kjøkkenet stenger <b>21:45</b> hele uken.
                     </p>
