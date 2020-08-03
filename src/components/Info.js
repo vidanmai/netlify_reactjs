@@ -3,7 +3,7 @@ import React from 'react';
 class Info extends React.Component {
     render() {
         return (
-            <div>
+            <div className="container">
                 <h1><u>Restaurant Vector</u></h1>
                     <p>
                         Vector Restaurant holder til i nedre Grünerløkka på Sagene. Her kan du oppleve det beste fra ulike kjøkken i Asia.

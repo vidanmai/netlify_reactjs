@@ -15,25 +15,25 @@ class Nav extends React.Component {
     
     render() {
         return (
-            <nav class="navbar">
+            <nav className="navbar">
                 <Link style={navStyle} to="/" className="logo">
                     <img src={logo} alt="restaurant logo" />
                 </Link>
                 <ul className="nav-links">
                     <Link style={navStyle} to="/">
-                        <li>Hjem</li>
+                        <li className="link">Hjem</li>
                     </Link>
                     <Link style={navStyle} to="/meny">
-                        <li>Meny</li>
+                        <li className="link">Meny</li>
                     </Link>
                     <Link style={navStyle} to="/info">
-                        <li>Info</li>
+                        <li className="link">Om Oss</li>
                     </Link>
-                    <Link style={navStyle} to="/blogg">
-                        <li>Blogg</li>
+                    <Link style={navStyle} to="/shop">
+                        <li className="link">Bestill</li>
                     </Link>
                     <Link style={navStyle} to="/kontakt">
-                        <li>Kontakt</li>
+                        <li className="link">Kontakt</li>
                     </Link>
                 </ul>
             </nav>

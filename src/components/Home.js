@@ -4,7 +4,7 @@ import '../style/Home.css';
 class Home extends React.Component {
     render() {
         return (
-            <div>
+            <div className="landing">
                 <div className="landingPage">
                 </div>
                 <div className="hero">
@@ -14,13 +14,28 @@ class Home extends React.Component {
                         <b>Adresse: </b>Stockfleths gate 53b, Norway 0598
                         <br/>
                         <br/>
-                        <b>Åpningstider: </b>Mandag-Fredag: 12:00 - 22:00
+                        <strong>Åpningstider: </strong>
+                        <br/>
+                        Mandag - Fredag: 12:00 - 22:00
                         <br/>
                         Lørdag og Søndag: 13:00 - 22:00
                         <br/>
                         <br/>
                         Kjøkkenet stenger <b>21:45</b> hele uken.
                     </p>
+                </div>
+                <div className="avdelinger">
+                    <div className="avdelingInfo">
+                        <h1>Våre Avdelinger</h1>
+                        <br/>
+                        <hr/>
+                        <br/>
+                        <div className="buttons">
+                            <button>Bamboo Sagene</button>
+                            <button>Bamboo Bjerke</button>
+                            <button>Bamboo Uranienborg</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         );

@@ -3,7 +3,7 @@ import React from 'react';
 class Contact extends React.Component {
     render() {
         return (
-            <div>
+            <div className="container">
                 <h1><u>Kontakt</u></h1>
                     <ul>
                         <li>Mandag - Fredag</li>

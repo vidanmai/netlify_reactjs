@@ -1,13 +1,13 @@
 import React from 'react';
 
-class Menu extends React.Component {
+class Shop extends React.Component {
     render() {
-        return (
+        return ( 
             <div className="container">
-                <h1>Meny</h1>
+                <h1>Bestill mat</h1>
             </div>
         );
     }
 }
 
-export default Menu;
+export default Shop;
