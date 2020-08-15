@@ -2,28 +2,22 @@
 nav {
     width: 100%;
     background-color: #0c0c0c;
-    overflow: auto;
-    display: flex;
-    justify-content: space-around;
-    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
-    height: 9vh;
-    padding: 10px;
-    overflow-y: hidden;
+    overflow: hidden;
 }
 
 .nav-links {
-    width: 30%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 18px;
-    margin-left: 30%;
+    margin-left: 50%;
+    width: 45%;
+    justify-content: space-evenly;
+    margin-top: 1.4rem;
+    font-size: 0.85rem;
+    white-space: nowrap;
     letter-spacing: 2px;
 }
 
 .link {
-    padding: 10px;
+    padding: 0.4rem;
     text-transform: uppercase;
 }
 
@@ -32,7 +26,8 @@ nav {
 }
 
 .logo {
-    display: inline-block;
+    float: left;
+    margin-left: 2rem;
 }
 
 .logo img {

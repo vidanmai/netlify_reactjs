@@ -6,23 +6,25 @@ class Home extends React.Component {
         return (
             <div className="landing">
                 <div className="landingPage">
-                </div>
-                <div className="hero">
-                    <p>
-                        <b>Telefon: </b>22 71 42 20
-                        <br/>
-                        <b>Adresse: </b>Stockfleths gate 53b, Norway 0598
-                        <br/>
-                        <br/>
-                        <strong>Åpningstider: </strong>
-                        <br/>
-                        Mandag - Fredag: 12:00 - 22:00
-                        <br/>
-                        Lørdag og Søndag: 13:00 - 22:00
-                        <br/>
-                        <br/>
-                        Kjøkkenet stenger <b>21:45</b> hele uken.
-                    </p>
+                    <div className="landingInfo">
+                        <div className="info">
+                            <p>
+                                <b>Telefon: </b>22 71 42 20
+                                <br/>
+                                <b>Adresse: </b>Stockfleths gate 53b, Norway 0598
+                                <br/>
+                                <br/>
+                                <strong>Åpningstider: </strong>
+                                <br/>
+                                Mandag - Fredag: 12:00 - 22:00
+                                <br/>
+                                Lørdag og Søndag: 13:00 - 22:00
+                                <br/>
+                                <br/>
+                                Kjøkkenet stenger <b>21:45</b> hele uken.
+                            </p>
+                        </div>
+                    </div>
                 </div>
                 <div className="avdelinger">
                     <div className="avdelingInfo">
