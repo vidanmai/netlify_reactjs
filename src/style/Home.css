@@ -1,17 +1,24 @@
 
+.landing {
+    display: block;
+    position: relative;
+}
+
 .landingPage {
     background-image: url('../img/bamboo_sushi_bg.jpg');
     background-size: cover;
     background-position: center;
-    height: 91vh;
-    opacity: 0.95;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
 }
 
 .landingInfo {
     position: relative;
-    width: 100%;
-    height: 100%;
-    background-color: #0c0c0c4b;
+    height: 100vh;
+    background-color: #16161631;
 }
 
 .info {
@@ -19,17 +26,22 @@
     width: 100%;
     height: 50%;
     text-align: center;
-    margin-top: 3rem;
-    line-height: 3rem;
-    font-size: 1.6rem;
+    margin-top: 6rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.4rem;
     color: white;
+    line-height: 3rem;
+    padding: 2rem;
     letter-spacing: 2px;
 }
 
 .avdelinger {
+    display: block;
+    position: relative;
     color: white;
-    position: absolute;
-    padding: 20px;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
     letter-spacing: 2px;
     width: 100vw;
     text-align: center;
@@ -81,6 +93,26 @@
 @media only screen and (max-width: 600px) {
     .landingPage {
         background-position: center;
+    }
+
+    .buttons {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-gap: 1rem;
+    }
+
+    .buttons button {
+        /* Green */
+        width: 100%;
+        background-color: transparent;
+        border: 1px solid lightgrey;
+        padding: 15px 4rem;
+        text-align: center;
+        font-size: 1rem;
+        cursor: pointer;
+        letter-spacing: 3px;
+        color: white;
+        text-transform: uppercase;
     }
 }
 

@@ -5,6 +5,7 @@ import Home from './components/Home';
 import Menu from './components/Menu';
 import Info from './components/Info';
 import Shop from './components/Shop';
+import Footer from './components/Footer';
 import Contact from './components/Contact';
 import './App.css';
 
@@ -22,6 +23,7 @@ function App() {
             <Route path="/shop" component={Shop} />
             <Route path="/kontakt" component={Contact} />
           </Switch>
+          <Footer />
         </div>
       </div>
     </Router>
