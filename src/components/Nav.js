@@ -5,7 +5,7 @@ import logo from '../img/bamboo_logo.png';
 
 // Style for Links
 const navStyle = {
-    color: "white",
+    color: "#e0e0e0",
     listStyleType: 'none',
     textDecoration: 'none'
 };

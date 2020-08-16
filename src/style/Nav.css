@@ -13,7 +13,7 @@ nav {
     width: 45%;
     justify-content: space-evenly;
     margin-top: 1.4rem;
-    font-size: 0.85rem;
+    font-size: calc(0.6em + 0.6vw);
     white-space: nowrap;
     letter-spacing: 2px;
 }
@@ -33,6 +33,7 @@ nav {
 }
 
 .logo img {
+    margin-top: 0.4rem;
     width: 180px;
     height: auto;
 }

@@ -5,7 +5,7 @@ class Shop extends React.Component {
         return ( 
             <div className="case">
                 <div className="container">
-                    <h1>Bestill mat</h1>
+                    <h1 className="dark-grey-text">Bestill og hent</h1>
                 </div>
             </div>
         );

@@ -4,7 +4,7 @@ class Menu extends React.Component {
     render() {
         return (
             <div className="case">
-                <div className="container">
+                <div className="container dark-grey-text">
                     <h1>Meny</h1>
                 </div>
             </div>
