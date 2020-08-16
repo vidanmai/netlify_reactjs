@@ -1,20 +1,24 @@
 import React from 'react';
 import '../style/Footer.css';
+import facebookLogo from '../img/facebook-128.png';
+import instagramLogo from '../img/instagram-128.png';
 
 class Footer extends React.Component {
     render() {
         return (
             <footer>
-                <div className="container">
-                <h1><u>Restaurant Vector</u></h1>
-                    <p>
-                        Vector Restaurant holder til i nedre Grünerløkka på Sagene. Her kan du oppleve det beste fra ulike kjøkken i Asia.
-                        Vi tilbyr retter som sushi, samt forskjellige wok retter.
-                    </p>
-                    <br/>
-                    <p>
-                    Du er velkommen til å nye rettene på vår restaurant i avslappende og trendy omgivelser, eller bestille takeaway.
-                    </p>
+                <div className="footerGrid">
+                    <div className="footer-info">
+                        <p>
+                            &copy; Bamboo Restaurant
+                            <br/>
+                            ORG NR: 918 437 762
+                        </p>
+                        </div>
+                    <div className="footer-icons">
+                        <img src={facebookLogo} alt=""/>
+                        <img src={instagramLogo} alt=""/>
+                    </div>
                 </div>
             </footer>
             

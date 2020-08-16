@@ -7,11 +7,12 @@
 
 .landingPage {
     background-image: url('../img/bamboo_sushi_bg.jpg');
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
     height: 100%;
     width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .landingInfo {
