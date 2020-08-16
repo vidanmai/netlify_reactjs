@@ -5,7 +5,6 @@ nav {
     background-color: #0c0c0c;
     overflow: hidden;
     z-index: 999;
-    height: 13vh;
 }
 
 .nav-links {
@@ -43,13 +42,14 @@ nav {
     nav {
         height: 8vh;
     }
-
-    .logo img {
+    
+    .logo {
         float: none;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        margin-left: 0;
     }
 
     .nav-links {
