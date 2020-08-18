@@ -23,6 +23,11 @@ nav {
     text-transform: uppercase;
 }
 
+.menu {
+    padding: 0.4rem;
+    text-transform: uppercase;
+}
+
 .link:hover {
     border-bottom: 1px solid #e74222;
 }

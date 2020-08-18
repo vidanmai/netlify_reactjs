@@ -35,6 +35,9 @@ class Nav extends React.Component {
                     <Link style={navStyle} to="/kontakt">
                         <li className="link">Kontakt</li>
                     </Link>
+                    <div style={navStyle} className="menu">
+                        <li>☰</li>
+                    </div>
                 </ul>
             </nav>
         );

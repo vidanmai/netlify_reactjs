@@ -10,16 +10,18 @@ class Home extends React.Component {
           <div className="landingInfo">
             <div className="info">
               <p>
-                <b>Telefon: </b>22 71 42 20
-                <br />
-                <b>Adresse: </b>Stockfleths gate 53b, Norway 0598
-                <br />
                 <br />
                 <strong>Åpningstider: </strong>
                 <br />
-                Mandag - Fredag: 12:00 - 22:00
+                <br/>
+                Mandag - Fredag: 
+                <br/>
+                12:00 - 22:00
                 <br />
-                Lørdag og Søndag: 13:00 - 22:00
+                <br />
+                Lørdag og Søndag:
+                <br />
+                13:00 - 22:00
                 <br />
                 <br />
                 <span id="warning">
