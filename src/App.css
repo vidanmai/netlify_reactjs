@@ -6,10 +6,6 @@
     margin: 0;
 }
 
-body, html {
-    height: 100%;
-}
-
 body {
     font-family: 'Open Sans',
     sans-serif;
@@ -22,7 +18,7 @@ body {
 /* The body of content on page below navbar */
 .case {
     width: 100%;
-    padding-top: 15vh;
+    padding-top: 12vh;
     min-height: 100vh;
 }
 
@@ -34,6 +30,13 @@ body {
     font-size: 1.35rem;
 }
 
+.responsiveImg {
+    width: 100%;
+    height: auto;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
 .wideImg {
     width: 100%;
     height: auto;
@@ -43,12 +46,36 @@ body {
 
 .grey-text {
     color: #505050;
+    font-weight: lighter;
 }
 
 .dark-grey-text {
     color: #404040;
     letter-spacing: 1px;
 }
+
+.bambooButton {
+    padding: 0.8rem 5rem;
+    margin-top: 1rem;
+    font-weight: bold;
+    border: 1px solid rgb(56, 56, 56);
+    border-radius: 1px;
+    font-size: 1.2rem;
+    background-color: #212121;
+    color: #eeeeee;
+}
+
+.bambooButton:hover {
+    background-color: transparent;
+    color: #212121;
+    transition: all 250ms linear;
+}
+
+.bambooButton:active {
+    transform: translateY(5px);
+    transition: all 25ms ease-in-out;
+}
+
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {

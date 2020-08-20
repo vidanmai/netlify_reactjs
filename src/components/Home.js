@@ -1,11 +1,18 @@
 import React from "react";
 import "../style/Home.css";
 import bambooSagene from "../img/bambooOutside.PNG";
+import { Link } from 'react-router-dom';
 
 class Home extends React.Component {
   render() {
     return (
-      <div className="landing">
+      <div className="case">
+        <div className="infoBanner">
+          <p className="dark-grey-text">Vi serverer kun takeaway på avdelingene våre</p>
+          <Link to="/meny">
+            <button className="bambooButton">Meny</button>
+          </Link>
+        </div>
         <div className="landingPage">
           <div className="landingInfo">
             <div className="info">
@@ -39,19 +46,18 @@ class Home extends React.Component {
             <br />
             <div className="avdelingGrid">
               <div className="buttons">
-                <button>Bamboo Sagene</button>
-                <button>Bamboo Bjerke</button>
-                <button>Bamboo Uranienborg</button>
+                <button className="bambooButton">Bamboo Sagene</button>
+                <button className="bambooButton">Bamboo Bjerke</button>
+                <button className="bambooButton">Bamboo Uranienborg</button>
               </div>
               <div className="avdelingInfo">
-                <img className="wideImg" src={bambooSagene} alt="" />
-                <p>
+                <img className="responsiveImg" src={bambooSagene} alt="" />
+                <p className="grey-text">
                   Bamboo Restaurant holder til i Stockfleths gate 53b på Sagene.
                   Her kan du oppleve det beste fra ulike verdener, sushi og
                   sashimi, samt forskjellige asiatiske retter.
-                </p>
                 <br />
-                <p>
+                <br/>
                   Du er velkommen til å nyte rettene på vår restaurant i
                   avslappende og trendy omgivelser, eller bestille take-away. Vi
                   har også alle rettighetene til å drikke på vår restaurant.

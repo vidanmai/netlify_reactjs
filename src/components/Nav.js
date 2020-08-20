@@ -20,22 +20,22 @@ class Nav extends React.Component {
                     <img src={logo} alt="restaurant logo" />
                 </Link>
                 <ul className="nav-links">
-                    <Link style={navStyle} to="/">
-                        <li className="link">Hjem</li>
-                    </Link>
-                    <Link style={navStyle} to="/meny">
-                        <li className="link">Meny</li>
-                    </Link>
-                    <Link style={navStyle} to="/info">
-                        <li className="link">Om Oss</li>
-                    </Link>
-                    <Link style={navStyle} to="/shop">
-                        <li className="link">Bestill</li>
-                    </Link>
-                    <Link style={navStyle} to="/kontakt">
-                        <li className="link">Kontakt</li>
-                    </Link>
-                    <div style={navStyle} className="menu">
+                        <Link style={navStyle} to="/">
+                            <li className="link">Hjem</li>
+                        </Link>
+                        <Link style={navStyle} to="/meny">
+                            <li className="link">Meny</li>
+                        </Link>
+                        <Link style={navStyle} to="/info">
+                            <li className="link">Om Oss</li>
+                        </Link>
+                        <Link style={navStyle} to="/shop">
+                            <li className="link">Bestill</li>
+                        </Link>
+                        <Link style={navStyle} to="/kontakt">
+                            <li className="link">Kontakt</li>
+                        </Link>
+                    <div style={navStyle} id="menu">
                         <li>☰</li>
                     </div>
                 </ul>

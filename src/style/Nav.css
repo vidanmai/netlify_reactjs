@@ -10,7 +10,7 @@ nav {
 .nav-links {
     display: flex;
     margin-left: 50%;
-    width: 45%;
+    max-width: 45%;
     justify-content: space-evenly;
     margin-top: 1.4rem;
     font-size: calc(0.6em + 0.6vw);
@@ -19,11 +19,6 @@ nav {
 }
 
 .link {
-    padding: 0.4rem;
-    text-transform: uppercase;
-}
-
-.menu {
     padding: 0.4rem;
     text-transform: uppercase;
 }
@@ -43,6 +38,13 @@ nav {
     height: auto;
 }
 
+#menu {
+    padding: 0.4rem 2rem 0.4rem 2rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #eeeeee;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     nav {
@@ -58,9 +60,24 @@ nav {
         margin-left: 0;
     }
 
-    .nav-links {
+    .nav-links :not(:last-child) {
         display: none;
     }
+
+    #menu {
+        position: absolute;
+        right: 0;
+        top: 0;
+        text-align: center;
+        font-size: 4vh;
+        height: 100%;
+    }
+
+    #menu:active {
+        transform: rotate(90deg);
+        transition: all 100ms ease-in-out;
+    }
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
