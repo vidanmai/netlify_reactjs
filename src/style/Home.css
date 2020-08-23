@@ -34,7 +34,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: calc(1em + 1vh);
-    font-weight: lighter;
     color: white;
     padding: 2rem;
     letter-spacing: 2px;
@@ -47,7 +46,8 @@
     letter-spacing: 2px;
     width: 100vw;
     text-align: center;
-    font-weight: lighter;
+    background-color: #0c0c0c;
+    color: white;
 }
 
 .avdelinger hr {
@@ -91,6 +91,10 @@
 
 .avdelingInfo img {
     margin-bottom: 4vh;
+}
+
+.avdelingInfo p {
+    font-size: 1.4rem;
 }
 
 @media (max-width: 768px) {

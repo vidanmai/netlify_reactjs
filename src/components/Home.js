@@ -5,6 +5,16 @@ import { Link } from 'react-router-dom';
 
 class Home extends React.Component {
   render() {
+    const bambooInfo = <p>
+      Bamboo Restaurant holder til i Stockfleths gate 53 b på Sagene.
+      Her kan du oppleve det beste fra ulike verdener, sushi og
+      sashimi, samt forskjellige asiatiske retter. 
+      <br / >
+        <br / >
+        Du er velkommen til å nyte rettene på vår restaurant i
+      avslappende og trendy omgivelser, eller bestille take - away. Vi
+      har også alle rettighetene til å drikke på vår restaurant.
+    </p>
     return (
       <div className="case">
         <div className="infoBanner">
@@ -46,22 +56,15 @@ class Home extends React.Component {
             <br />
             <div className="avdelingGrid">
               <div className="buttons">
-                <button className="bambooButton">Bamboo Sagene</button>
-                <button className="bambooButton">Bamboo Bjerke</button>
-                <button className="bambooButton">Bamboo Uranienborg</button>
+                <button className="bambooButton2">Bamboo Sagene</button>
+                <button className="bambooButton2">Bamboo Bjerke</button>
+                <button className="bambooButton2">Bamboo Uranienborg</button>
               </div>
               <div className="avdelingInfo">
                 <img className="responsiveImg" src={bambooSagene} alt="" />
-                <p className="grey-text">
-                  Bamboo Restaurant holder til i Stockfleths gate 53b på Sagene.
-                  Her kan du oppleve det beste fra ulike verdener, sushi og
-                  sashimi, samt forskjellige asiatiske retter.
-                <br />
-                <br/>
-                  Du er velkommen til å nyte rettene på vår restaurant i
-                  avslappende og trendy omgivelser, eller bestille take-away. Vi
-                  har også alle rettighetene til å drikke på vår restaurant.
-                </p>
+                <div>
+                  {bambooInfo}
+                </div>
               </div>
             </div>
           </div>

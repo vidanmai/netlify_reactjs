@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -7,7 +9,7 @@
 }
 
 body {
-    font-family: 'Open Sans',
+    font-family: 'Montserrat',
     sans-serif;
     font-size: 18px;
     width: 100vw;
@@ -45,8 +47,7 @@ body {
 }
 
 .grey-text {
-    color: #505050;
-    font-weight: lighter;
+    color: #2a2a2a;
 }
 
 .dark-grey-text {
@@ -61,18 +62,52 @@ body {
     border: 1px solid rgb(56, 56, 56);
     border-radius: 1px;
     font-size: 1.2rem;
-    background-color: #212121;
+    background: linear-gradient(to right, transparent 50%, #212121 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
     color: #eeeeee;
+    border: 1px solid #212121;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
+
 .bambooButton:hover {
-    background-color: transparent;
-    color: #212121;
+    background-position: left bottom;
+    color: black;
     transition: all 250ms linear;
 }
 
-.bambooButton:active {
-    transform: translateY(5px);
+.bambooButton2 {
+    padding: 0.8rem 5rem;
+    margin-top: 1rem;
+    font-weight: bold;
+    border: 1px solid rgb(56, 56, 56);
+    border-radius: 1px;
+    font-size: 1.2rem;
+    background: linear-gradient(to right, transparent 50%, #e74222 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    color: black;
+    border: 1px solid #e74222;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.bambooButton2:hover {
+    background-position: left bottom;
+    color: white;
+    transition: all 250ms ease-out;
+}
+
+.bambooButton:focus,
+.bambooButton2:focus {
+    outline: none;
+}
+
+.bambooButton:active,
+.bambooButton2:active {
+    transform: translateY(3px);
     transition: all 25ms ease-in-out;
 }
 
