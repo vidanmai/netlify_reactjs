@@ -55,49 +55,41 @@ body {
     letter-spacing: 1px;
 }
 
-.bambooButton {
-    padding: 0.8rem 5rem;
+.bambooButton, .bambooButton2 {
+    padding: 1rem 6rem;
     margin-top: 1rem;
     font-weight: bold;
-    border: 1px solid rgb(56, 56, 56);
-    border-radius: 1px;
-    font-size: 1.2rem;
-    background: linear-gradient(to right, transparent 50%, #212121 50%);
-    background-size: 200% 100%;
-    background-position: right bottom;
-    color: #eeeeee;
-    border: 1px solid #212121;
+    font-size: 1rem;
     letter-spacing: 1px;
     text-transform: uppercase;
 }
 
+.bambooButton {
+    background: linear-gradient(to right, transparent 50%, #212121 50%);
+    background-size: 200% 150%;
+    background-position: right bottom;
+    color: #eeeeee;
+    border: 2px solid #212121;
+}
+
+.bambooButton2 {
+    background: linear-gradient(to right, transparent 50%, #e74222 50%);
+    background-size: 200% 150%;
+    background-position: right bottom;
+    color: black;
+    border: 2px solid #e74222;
+}
 
 .bambooButton:hover {
     background-position: left bottom;
     color: black;
-    transition: all 250ms linear;
-}
-
-.bambooButton2 {
-    padding: 0.8rem 5rem;
-    margin-top: 1rem;
-    font-weight: bold;
-    border: 1px solid rgb(56, 56, 56);
-    border-radius: 1px;
-    font-size: 1.2rem;
-    background: linear-gradient(to right, transparent 50%, #e74222 50%);
-    background-size: 200% 100%;
-    background-position: right bottom;
-    color: black;
-    border: 1px solid #e74222;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+    transition: all 200ms ease-in-out;
 }
 
 .bambooButton2:hover {
     background-position: left bottom;
     color: white;
-    transition: all 250ms ease-out;
+    transition: all 200ms ease-out;
 }
 
 .bambooButton:focus,

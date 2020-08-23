@@ -9,8 +9,8 @@ nav {
 
 .nav-links {
     display: flex;
-    margin-left: 50%;
-    max-width: 45%;
+    margin-left: 40%;
+    max-width: 60%;
     justify-content: space-evenly;
     margin-top: 1.4rem;
     font-size: calc(0.6em + 0.6vw);
@@ -19,7 +19,7 @@ nav {
 }
 
 .link {
-    padding: 0.4rem;
+    padding: 0.4rem 1rem 0.4rem 1rem;
     text-transform: uppercase;
 }
 
@@ -48,7 +48,8 @@ nav {
 }
 
 #menu {
-    padding: 0.4rem 2rem 0.4rem 2rem;
+    display: none; /* Display none temp */
+    padding: 0.4rem 1rem 0.4rem 1rem;
     font-weight: bold;
     font-size: 1.2rem;
     color: #eeeeee;

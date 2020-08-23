@@ -18,7 +18,7 @@
 .landingInfo {
     position: relative;
     height: 100vh;
-    background-color: rgba(41, 41, 41, 0.294);
+    background-color: rgba(58, 48, 48, 0.4);
 }
 
 .info {
@@ -54,8 +54,8 @@
     border: none;
     height: 1px;
     /* Set the hr color */
-    color: #212121; /* old IE */
-    background-color: #212121; /* Modern Browsers */
+    color: white; /* old IE */
+    background-color: white; /* Modern Browsers */
 }
 
 .avdelinger h1 {
@@ -94,7 +94,7 @@
 }
 
 .avdelingInfo p {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
 }
 
 @media (max-width: 768px) {
