@@ -1,6 +1,7 @@
 import React from "react";
 import "../style/Home.css";
 import bambooSagene from "../img/bambooOutside.PNG";
+import foodPic from '../img/bamboo_sushi_bg.jpg';
 import { Link } from 'react-router-dom';
 
 class Home extends React.Component {
@@ -24,6 +25,9 @@ class Home extends React.Component {
           </Link>
         </div>
         <div className="landingPage">
+          <div className="landingImg">
+            <img src={foodPic} className="landingImg" alt=""/>
+          </div>
           <div className="landingInfo">
             <div className="info">
               <p>
@@ -41,7 +45,7 @@ class Home extends React.Component {
                 13:00 - 22:00
                 <br />
                 <br />
-                <span id="warning">
+                <span className="orangeBorder">
                   Kjøkkenet stenger <b>21:45</b> hele uken
                 </span>
               </p>

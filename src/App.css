@@ -34,7 +34,7 @@ body {
 
 .responsiveImg {
     width: 100%;
-    height: auto;
+    height: 1000px;
     margin-top: 2vh;
     margin-bottom: 2vh;
 }
@@ -53,6 +53,11 @@ body {
 .dark-grey-text {
     color: #404040;
     letter-spacing: 1px;
+}
+
+.orangeBorder {
+    border-bottom: 3px solid #e74222;
+    padding-bottom: 7px;
 }
 
 .bambooButton, .bambooButton2 {
