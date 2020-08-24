@@ -4,6 +4,10 @@
     padding: 2rem;
     font-weight: lighter;
     font-size: 1.5rem;
+    background-color: white;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: 1px solid rgb(226, 226, 226);
 }
 
 .landingPage {
@@ -11,7 +15,7 @@
     grid-template-columns: repeat(8, 1fr);
     width: 90%;
     margin: 0 auto;
-    margin-top: 5%;
+    margin-top: 2%;
     margin-bottom: 5%;
 }
 
@@ -34,7 +38,7 @@
     background-color: black;
     color: white;
     text-align: center;
-    padding: 2rem 4rem 4rem 4rem;
+    padding: 4rem;
     font-size: calc(1rem + 1vh);
 }
 
@@ -45,7 +49,7 @@
     letter-spacing: 2px;
     width: 100vw;
     text-align: center;
-    background-color: #0c0c0c;
+    background-color: black;
     color: white;
 }
 
@@ -120,13 +124,15 @@
     }
 
     .landingPage {
+        grid-template-columns: repeat(10, 1fr);
         width: 100%;
         margin-bottom: 20%;
     }
 
     .landingImg {
-        grid-column: 1 / 8;
+        grid-column: 1 / -1;
         width: 100%;
+        height: auto;
     }
 
     .landingInfo {
@@ -139,8 +145,16 @@
         background-color: black;
         color: white;
         text-align: center;
-        padding: 0.5rem 1rem 2rem 1rem;
-        font-size: 1rem;
+        padding: 2rem 1rem 3rem 1rem;
+        font-size: 1.1rem;
+    }
+
+    .avdelingInfo {
+        width: 100%;
+    }
+
+    .avdelingInfo p {
+        font-size: 1.1rem;
     }
 }
 

@@ -13,7 +13,7 @@ class Home extends React.Component {
       <br / >
         <br / >
         Du er velkommen til å nyte rettene på vår restaurant i
-      avslappende og trendy omgivelser, eller bestille take - away. Vi
+      avslappende og trendy omgivelser, eller bestille takeaway. Vi
       har også alle rettighetene til å drikke på vår restaurant.
     </p>
     return (
@@ -30,10 +30,8 @@ class Home extends React.Component {
           </div>
           <div className="landingInfo">
             <div className="info">
+              <h2>Åpningstider: </h2>
               <p>
-                <br />
-                <strong>Åpningstider: </strong>
-                <br />
                 <br/>
                 Mandag - Fredag: 
                 <br/>
@@ -46,7 +44,7 @@ class Home extends React.Component {
                 <br />
                 <br />
                 <span className="orangeBorder">
-                  Kjøkkenet stenger <b>21:45</b> hele uken
+                  Kjøkkenet stenger <strong>21:45</strong> hele uken
                 </span>
               </p>
             </div>
