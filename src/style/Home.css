@@ -30,31 +30,59 @@
     overflow: hidden;
 }
 
+.secondGrid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    width: 100%;
+}
+
+.secondGridImg, .bestillInfo {
+    grid-row: 1 / -1;
+}
+
+.secondGridImg {
+    grid-column: 5 / -1;
+    width: 100%;
+}
+
+.bestillInfo {
+    grid-column: 2 / 7;
+    width: 80%;
+    align-self: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow: hidden;
+    z-index: 2;
+    margin-bottom: 10%;
+}
+
 .info {
     background-color: black;
     color: white;
     text-align: center;
     padding: 4rem;
+}
 
+.bestillInfo {
+    background-color: #eeeeee;
+    color: black;
+    text-align: center;
+    padding: 2rem;
 }
 
 .avdelinger {
     position: relative;
-    padding-top: 2rem;
-    padding-bottom: 4rem;
     letter-spacing: 2px;
     width: 100%;
     text-align: center;
-    background-color: black;
-    color: white;
+    color: black;
 }
 
 .avdelinger hr {
     border: none;
     height: 1px;
     /* Set the hr color */
-    color: white; /* old IE */
-    background-color: white; /* Modern Browsers */
+    color: #404040; /* old IE */
+    background-color: #404040; /* Modern Browsers */
 }
 
 .avdelinger h1 {
@@ -62,18 +90,8 @@
     word-spacing: 5px;
     letter-spacing: 5px;
 }
-
-.avdelingHeader {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;   
-}
-
-.avdelingGrid {
-    display: grid;
-    width: 100%;
-    grid-template-columns: 1fr 3fr;
-    grid-gap: 5%;
+.avdelingGrid .case {
+    padding: 0;
 }
 
 .buttons {
@@ -125,13 +143,13 @@
         grid-template-columns: auto;
     }
 
-    .landingPage {
+    .landingPage, .secondGrid {
         grid-template-columns: repeat(10, 1fr);
         width: 100%;
-        margin-bottom: 10%;
+        margin-bottom: 5%;
     }
 
-    .landingImg {
+    .landingImg, .secondGridImg {
         grid-column: 1 / -1;
         width: 100%;
         height: auto;
@@ -141,6 +159,17 @@
         grid-column: 2 / -1;
         width: 100%;
         margin-top: 55%;
+    }
+
+    .bestillInfo {
+        grid-column: 1 / 10;
+        width: 100%;
+        margin-top: 55%;
+    }
+
+    .bestillInfo button {
+        padding: 1rem;
+        width: 100%;
     }
 
     .info {
@@ -162,16 +191,22 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    .landingPage {
+    .landingPage, .secondGrid {
         grid-template-columns: repeat(10, 1fr);
         width: 100%;
         margin-bottom: 10%;
     }
 
-    .landingImg {
+    .landingImg, .secondGridImg {
         grid-column: 1 / -1;
         width: 100%;
         height: auto;
+    }
+    
+    .bestillInfo {
+        grid-column: 1 / 6;
+        width: 100%;
+        margin-top: 70%;
     }
 
     .landingInfo {
@@ -182,8 +217,13 @@
     }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (min-width: 768px) {
+    .bestillInfo {
+        grid-column: 1 / 7;
+        margin-top: 75%;
+    }
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
@@ -191,22 +231,28 @@
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    .landingPage {
+    .landingPage, .secondGrid {
         display: grid;
         grid-template-columns: repeat(8, 1fr);
-        width: 90%;
+        width: 95%;
         margin: 0 auto;
         margin-top: 4%;
         margin-bottom: 5%;
     }
     
-    .landingImg, .landingInfo {
-        grid-row: 1 / 8;
-    }
-    
     .landingImg {
         grid-column: 1 / 6;
         width: 100%;
+    }
+
+    .secondGridImg {
+        grid-column: 4 / -1;
+    }
+
+    .bestillInfo {
+        grid-column: 1 / 5;
+        margin: 0;
+        align-self: center;
     }
     
     .landingInfo {
