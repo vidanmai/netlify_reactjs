@@ -5,24 +5,30 @@ class Contact extends React.Component {
     return (
       <div className="case">
         <div className="container">
-          <h1 className="dark-grey-text">Kontakt</h1>
+          <h2 className="dark-grey-text">Bamboo Sagene</h2>
           <br />
-          <span className="grey-text">
-            <ul style={{ listStyleType: "none" }}>
-              <li>Mandag - Fredag</li>
-              <li>12.00-22.00</li>
-              <br />
-              <li>Lørdag og Søndag</li>
-              <li>13.00-22.00</li>
-            </ul>
-            <br />
-            <p>KJØKKENET STENGER KLOKKEN 21:45 HELE UKEN.</p>
-            <br />
-            <p>
-              Adressen vår er Stockfleths gate 53b Oslo, Norway 0598 Kontakt oss
-              på 22 71 42 20 eller kontakt@bamboosagene.no
-            </p>
-          </span>
+          <p className="grey-text">
+            Stockfleths gate 53b, 0461 Oslo
+            <br/>
+            22 71 42 20
+          </p>
+          <br/><br/>
+          <h2 className="dark-grey-text">Bamboo TO GO Bjerke</h2>
+          <br/>
+          <p className="grey-text">
+            Brobekkveien 31, 0598 Oslo
+            <br/>
+            92 26 69 89 
+          </p>
+          <br/><br/>
+          <h2 className="dark-grey-text">Bamboo TO GO Uranienborg</h2>
+          <br/>
+          <p className="grey-text">
+            Uranieborgveien 7B, 0351 Oslo
+            <br/>
+            92 22 65 88
+          </p>
+          <br/><br/>
         </div>
       </div>
     );

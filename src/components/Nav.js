@@ -30,7 +30,7 @@ class Nav extends React.Component {
                             <li className="link">Om Oss</li>
                         </Link>
                         <Link style={navStyle} to="/shop">
-                            <li className="link">Bestill</li>
+                            <li className="link">Bestill og hent</li>
                         </Link>
                         <Link style={navStyle} to="/kontakt">
                             <li className="link">Kontakt</li>

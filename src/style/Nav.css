@@ -9,11 +9,11 @@ nav {
 
 .nav-links {
     display: flex;
-    margin-left: 40%;
+    margin-left: 39%;
     max-width: 60%;
     justify-content: space-evenly;
     margin-top: 1.4rem;
-    font-size: calc(0.6em + 0.6vw);
+    font-size: calc(0.4em + 0.7vw);
     white-space: nowrap;
     letter-spacing: 2px;
 }
@@ -56,8 +56,12 @@ nav {
     color: #eeeeee;
 }
 
-/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+
+}
+
+/* For tablets and smaller (tablets, phones, 768px and down) */
+@media only screen and (max-width: 768px) {
     nav {
         height: 8vh;
     }
@@ -76,11 +80,47 @@ nav {
     }
 
     #menu {
+        display: block;
         position: absolute;
         right: 0;
         top: 0;
-        text-align: center;
+        align-self: center;
         font-size: 4vh;
+        height: 100%;
+    }
+
+    #menu:active {
+        transform: rotate(90deg);
+        transition: all 100ms ease-in-out;
+    }
+
+}
+
+@media only screen and (max-width: 992px) and (orientation: landscape) {
+    nav {
+        height: 13vh;
+    }
+    
+    .logo {
+        float: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-left: 0;
+    }
+
+    .nav-links :not(:last-child) {
+        display: none;
+    }
+
+    #menu {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        align-self: center;
+        font-size: 6vh;
         height: 100%;
     }
 
