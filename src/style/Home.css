@@ -90,8 +90,11 @@
     word-spacing: 5px;
     letter-spacing: 5px;
 }
-.avdelingGrid .case {
+
+/* Temporary CSS for Contact component */
+.avdelingGrid .case, .avdelingGrid .container {
     padding: 0;
+    font-size: 1.1rem;
 }
 
 .buttons {
