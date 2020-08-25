@@ -7,6 +7,7 @@ import Info from './components/Info';
 import Shop from './components/Shop';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
+import ScrollToTop from './components/ScrollToTop';
 import './App.css';
 
 function App() {
@@ -17,12 +18,13 @@ function App() {
         <Nav />
         <div className="main">
           <Switch>
-            <Route path="/" exact component ={Home} />
-            <Route path="/meny" exact component ={Menu} />
-            <Route path="/info" exact component ={Info} />
+            <Route path="/" exact component={Home} />
+            <Route path="/meny" exact component={Menu} />
+            <Route path="/info" exact component={Info} />
             <Route path="/shop" component={Shop} />
             <Route path="/kontakt" component={Contact} />
           </Switch>
+          <ScrollToTop/>
           <Footer />
         </div>
       </div>
