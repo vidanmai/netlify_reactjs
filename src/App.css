@@ -61,7 +61,7 @@ body {
 }
 
 .bambooButton, .bambooButton2 {
-    padding: 1rem 5rem;
+    padding: 1rem;
     max-width: 90%;
     margin-top: 1rem;
     font-weight: bold;
@@ -71,6 +71,7 @@ body {
 }
 
 .bambooButton {
+    padding: 1rem 6rem;
     background: linear-gradient(to right, transparent 50%, black 50%);
     background-size: 200% 150%;
     background-position: right bottom;
@@ -79,6 +80,7 @@ body {
 }
 
 .bambooButton2 {
+    width: 85%;
     background: linear-gradient(to right, transparent 50%, #e74222 50%);
     background-size: 200% 150%;
     background-position: right bottom;
