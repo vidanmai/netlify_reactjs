@@ -92,9 +92,17 @@
 }
 
 /* Temporary CSS for Contact component */
-.avdelingGrid .case, .avdelingGrid .container {
+.avdelingGrid .case, .avdelingGrid .avdeling {
     padding: 0;
     font-size: 1.1rem;
+}
+
+.avdeling {
+    border-bottom: 1px solid #404040;
+    max-width: 55%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    text-align: center;
 }
 
 .buttons {
@@ -220,7 +228,13 @@
     }
 }
 
-/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
+    .avdeling {
+        max-width: 90%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     .bestillInfo {
         grid-column: 1 / 7;
@@ -254,8 +268,7 @@
 
     .bestillInfo {
         grid-column: 1 / 5;
-        margin: 0;
-        align-self: center;
+        margin: 1rem;
     }
     
     .landingInfo {

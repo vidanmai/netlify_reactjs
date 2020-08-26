@@ -1,0 +1,54 @@
+.buttonGrid {
+    display: grid;
+    grid-auto-flow: column;
+    margin: 0 auto;
+    margin-top: 5vh;
+}
+
+.allergener {
+    font-size: 14px;
+    margin: 5vh 0;
+}
+
+.meny {
+    margin-top: 8vh;
+    font-size: 1.1rem;
+}
+
+.meny h1, h2, h3 {
+    margin-top: 1rem;
+}
+
+.meny ul li {
+    list-style-type: none;
+}
+
+.matrett {
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: 9fr 1fr;
+}
+
+.menySeksjon {
+    margin: 3rem 0;
+}
+
+.navn {
+    font-size: 1rem;
+}
+
+.beskrivelse {
+    font-size: 0.90rem;
+    font-weight: lighter;
+    margin: 0.5rem 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .buttonGrid {
+        grid-auto-flow: row;
+        grid-gap: 10px;
+    }
+    .buttonGrid button {
+        width: 100%;
+    }
+}

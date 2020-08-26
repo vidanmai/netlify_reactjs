@@ -5,39 +5,45 @@ class Contact extends React.Component {
     return (
       <div className="case">
         <div className="container">
-          <h2 className="dark-grey-text">Bamboo Sagene</h2>
-          <br />
-          <ul style={{ listStyleType: "none"}}>
-            <li>Stockfleths gate 53b, 0461 Oslo</li>
-            <li>22 71 42 20</li>
-            <br/>
-            <b className="dark-grey-text">Åpningstider</b>
-            <li>Mandag - Fredag: 12:00 - 22:00</li>
-            <li>Lørdag og Søndag: 13:00 - 22:00</li>
-          </ul>
-          <br/><br/>
-          <h2 className="dark-grey-text">Bamboo TO GO Bjerke</h2>
-          <br/>
-          <ul style={{ listStyleType: "none"}}>
-            <li>Brobekkveien 31, 0598 Oslo</li>
-            <li>92 26 69 89</li>
-            <br/>
-            <b className="dark-grey-text">Åpningstider</b>
-            <li>Mandag - Fredag: 12:00 - 21:00</li>
-            <li>Lørdag og Søndag: 13:00 - 21:00</li>
-          </ul>
-          <br/><br/>
-          <h2 className="dark-grey-text">Bamboo TO GO Uranienborg</h2>
-          <br/>
-          <ul style={{ listStyleType: "none"}}>
-            <li>Uranieborgveien 7B, 0351 Oslo</li>
-            <li>92 22 65 88</li>
-            <br/>
-            <b className="dark-grey-text">Åpningstider</b>
-            <li>Mandag - Fredag: 12:00 - 21:00</li>
-            <li>Lørdag og Søndag: 13:00 - 21:00</li>
-          </ul>
-          <br/><br/>
+          <div className="avdeling">
+            <h2 className="dark-grey-text">Bamboo Sagene</h2>
+            <br />
+            <ul style={{ listStyleType: "none" }}>
+              <li>Stockfleths gate 53b, 0461 Oslo</li>
+              <li>22 71 42 20</li>
+              <br />
+              <b className="dark-grey-text">Åpningstider</b>
+              <li>Mandag - Fredag: 12:00 - 22:00</li>
+              <li>Lørdag og Søndag: 13:00 - 22:00</li>
+            </ul>
+            <br /><br />
+          </div>
+          <div className="avdeling">
+            <h2 className="dark-grey-text">Bamboo Bjerke</h2>
+            <br />
+            <ul style={{ listStyleType: "none" }}>
+              <li>Brobekkveien 31, 0598 Oslo</li>
+              <li>92 26 69 89</li>
+              <br />
+              <b className="dark-grey-text">Åpningstider</b>
+              <li>Mandag - Fredag: 12:00 - 21:00</li>
+              <li>Lørdag og Søndag: 13:00 - 21:00</li>
+            </ul>
+            <br /><br />
+          </div>
+          <div className="avdeling">
+            <h2 className="dark-grey-text">Bamboo Uranienborg</h2>
+            <br />
+            <ul style={{ listStyleType: "none" }}>
+              <li>Uranieborgveien 7B, 0351 Oslo</li>
+              <li>92 22 65 88</li>
+              <br />
+              <b className="dark-grey-text">Åpningstider</b>
+              <li>Mandag - Fredag: 12:00 - 21:00</li>
+              <li>Lørdag og Søndag: 13:00 - 21:00</li>
+            </ul>
+            <br /><br />
+          </div>
         </div>
       </div>
     );
