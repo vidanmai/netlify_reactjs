@@ -59,7 +59,6 @@ class Home extends React.Component {
           <h1 className="dark-grey-text">Våre Avdelinger</h1>
           <br />
           <hr />
-          <br />
           <div className="avdelingGrid">
             <Contact />
           </div>

@@ -51,7 +51,7 @@ body {
 }
 
 .dark-grey-text {
-    color: #404040;
+    color: #333333;
     letter-spacing: 1px;
 }
 
@@ -67,7 +67,6 @@ body {
 
 .bambooButton, .bambooButton2 {
     padding: 1rem;
-    max-width: 90%;
     margin-top: 1rem;
     font-weight: bold;
     font-size: 1rem;
@@ -77,6 +76,7 @@ body {
 
 .bambooButton {
     padding: 1rem 6rem;
+    max-width: 90%;
     background: linear-gradient(to right, transparent 50%, black 50%);
     background-size: 200% 150%;
     background-position: right bottom;
@@ -85,6 +85,7 @@ body {
 }
 
 .bambooButton2 {
+    width: 90%;
     border-radius: 2px;
     background: linear-gradient(to right, transparent 50%, #e74222 50%);
     background-size: 200% 150%;
@@ -121,6 +122,8 @@ body {
 @media only screen and (max-width: 600px) {
     .container {
         width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
     }
     .case {
         padding-top: 7vh;
@@ -129,6 +132,13 @@ body {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (min-width: 768px) {
+    .container {
+        width: 80%;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */

@@ -34,12 +34,12 @@
 }
 
 .navn {
+    color: #212121;
     font-size: 1rem;
 }
 
 .beskrivelse {
     font-size: 0.90rem;
-    font-weight: lighter;
     margin: 0.5rem 0;
 }
 
@@ -48,10 +48,12 @@
 }
 
 @media only screen and (max-width: 768px) {
+    
     .buttonGrid {
         grid-auto-flow: row;
         grid-gap: 10px;
     }
+
     .buttonGrid button {
         width: 100%;
     }
