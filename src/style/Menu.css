@@ -47,6 +47,31 @@
     font-size: 0.90rem;
 }
 
+.allergenButton {
+    background-color: #e74222;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border: 2px solid #e74222;
+}
+
+.allergenButton:focus {
+    outline-color: #212121;
+}
+
+.active {
+    background-color: transparent;
+    color: black;
+}
+
 @media only screen and (max-width: 768px) {
     
     .buttonGrid {
