@@ -10,7 +10,6 @@ const navStyle = {
     textDecoration: 'none'
 };
 
-
 class Nav extends React.Component {
     
     render() {
@@ -36,7 +35,11 @@ class Nav extends React.Component {
                             <li className="link">Kontakt</li>
                         </Link>
                     <div style={navStyle} id="menu">
-                        <li>☰</li>
+                        <div id="hamburger">
+                            <span className="line line1 active"></span>
+                            <span className="line" id="line2"></span>
+                            <span className="line" id="line3"></span>
+                        </div>
                     </div>
                 </ul>
             </nav>

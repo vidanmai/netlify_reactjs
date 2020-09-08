@@ -5,13 +5,8 @@
     margin-top: 5vh;
 }
 
-.allergenSeksjon {
-    font-size: 14px;
-    margin: 5vh 0;
-}
-
 .meny {
-    margin-top: 8vh;
+    margin-top: 3vh;
     font-size: 1.1rem;
 }
 
@@ -21,6 +16,11 @@
 
 .meny ul li {
     list-style-type: none;
+}
+
+.allergenSeksjon {
+    font-size: 14px;
+    margin: 5vh 0;
 }
 
 .matrett {
@@ -47,6 +47,10 @@
     font-size: 0.90rem;
 }
 
+.pris {
+    text-align: right;
+}
+
 .allergenButton {
     background-color: #e74222;
     /* Green */
@@ -57,7 +61,8 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
     transition-duration: 0.4s;
     cursor: pointer;
     border: 2px solid #e74222;

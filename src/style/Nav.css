@@ -48,15 +48,54 @@ nav {
     height: auto;
 }
 
-#menu {
-    display: none; /* Display none temp */
-    padding: 0.4rem 1rem 0.4rem 1rem;
-    font-weight: bold;
-    font-size: 1.2rem;
+#hamburger {
+    display: grid;
+    place-items: center;
+    height: 40px;
+    width: 100%;
+    cursor: pointer;
 }
 
-#menu li {
-    color: #eeeeee;
+.line {
+    height: 3px;
+    background: #eeeeee;
+    display: block;
+    transition: all 0.3s ease-in-out;
+}
+
+.line1 {
+    width: 42px;
+    background: red;
+}
+
+.active, .line1 {
+    transform-origin: center center;
+    transform: rotate(-45deg) translate(-4px, 12px);
+}
+
+#line2 {
+    opacity: 0;
+}
+
+#line3 {
+    transform-origin: center center;
+    transform: rotate(45deg) translate(-7px, -14px);
+    width: 42px;
+}
+
+#line1 .active {
+    transform-origin: center center;
+    transform: rotate(-45deg) translate(-12px, 12px);
+}
+
+#line2 .active {
+    transform: translateX(10px);
+    opacity: 0;
+}
+
+#line3 .active {
+    transform-origin: center center;
+    transform: rotate(45deg) translate(-15px, -14px);
 }
 
 @media only screen and (max-width: 600px) {
@@ -81,22 +120,6 @@ nav {
     .nav-links :not(:last-child) {
         display: none;
     }
-
-    #menu {
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 0;
-        align-self: center;
-        font-size: 4vh;
-        height: 100%;
-    }
-
-    #menu:active {
-        transform: rotate(90deg);
-        transition: all 100ms ease-in-out;
-    }
-
 }
 
 @media only screen and (max-width: 992px) and (orientation: landscape) {
@@ -115,21 +138,6 @@ nav {
 
     .nav-links :not(:last-child) {
         display: none;
-    }
-
-    #menu {
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 0;
-        align-self: center;
-        font-size: 6vh;
-        height: 100%;
-    }
-
-    #menu:active {
-        transform: rotate(90deg);
-        transition: all 100ms ease-in-out;
     }
 
 }

@@ -2,23 +2,9 @@ import React from 'react';
 import '../style/Menu.css';
 import AllergenButton from './AllergenButton';
 import MenuList from './MenuList';
+import { allergener } from './Allergener';
 
-const allergener2 = [
-    'G',
-    'E',
-    'F',
-    'P',
-    'S',
-    'N',
-    'Sel',
-    'Sen',
-    'Se',
-    'Sv',
-    'Sk',
-    'Bl'
-];
-
-const sortedAllergens = allergener2.sort();
+const sortedAllergens = allergener.sort();
 
 class Menu extends React.Component {
     constructor(props) {
@@ -66,13 +52,6 @@ class Menu extends React.Component {
             <div className="case">
                 <div className="container dark-grey-text">
                     <h1>Meny</h1>
-                    {/*
-                    <div className="buttonGrid">
-                        <button className="bambooButton2">Bamboo Sagene</button>
-                        <button className="bambooButton2">Bamboo Bjerke</button>
-                        <button className="bambooButton2">Bamboo Uranienborg</button>
-                    </div>
-                    */}
                     <div className="meny">
                         <div className="sageneMeny">
                             <div className="allergenSeksjon">
