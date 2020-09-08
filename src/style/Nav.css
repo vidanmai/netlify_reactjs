@@ -1,6 +1,7 @@
 
 nav {
-    position: fixed;
+    top: 0;
+    position: sticky;
     width: 100%;
     background-color: #0c0c0c;
     overflow: hidden;
@@ -51,6 +52,10 @@ nav {
     margin-top: 0.4rem;
     width: 180px;
     height: auto;
+}
+
+#menuButton {
+    margin-right: 2vw;
 }
 
 #menu {

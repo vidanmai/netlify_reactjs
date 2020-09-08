@@ -44,7 +44,7 @@ class Nav extends React.Component {
                 </Link>
                 <ul className="nav-links">
                     <NavLinks/>
-                    <div onClick={this.toggleOverlay}>
+                    <div id="menuButton" onClick={this.toggleOverlay}>
                         <NavMenuButton/>
                     </div>
                 </ul>
