@@ -1,17 +1,37 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import '../style/Nav.css';
-import logo from '../img/bamboo_logo.png';
+import React from "react";
+import { Link } from "react-router-dom";
+import "../style/Nav.css";
+import logo from "../img/bamboo_logo.png";
+import NavMenuButton from "./NavMenuButton";
 
 // Style for Links
 const navStyle = {
     color: "#e0e0e0",
-    listStyleType: 'none',
-    textDecoration: 'none'
+    listStyleType: "none",
+    textDecoration: "none",
 };
 
+const navLinks = (
+    <div className="links">
+        <Link style={navStyle} to="/">
+            <li className="link">Hjem</li>
+        </Link>
+        <Link style={navStyle} to="/meny">
+            <li className="link">Meny</li>
+        </Link>
+        <Link style={navStyle} to="/info">
+            <li className="link">Om Oss</li>
+        </Link>
+        <Link style={navStyle} to="/shop">
+            <li className="link">Bestill og hent</li>
+        </Link>
+        <Link style={navStyle} to="/kontakt">
+            <li className="link">Kontakt</li>
+        </Link>
+    </div>
+);
+
 class Nav extends React.Component {
-    
     render() {
         return (
             <nav className="navbar">
@@ -19,27 +39,9 @@ class Nav extends React.Component {
                     <img src={logo} alt="restaurant logo" />
                 </Link>
                 <ul className="nav-links">
-                        <Link style={navStyle} to="/">
-                            <li className="link">Hjem</li>
-                        </Link>
-                        <Link style={navStyle} to="/meny">
-                            <li className="link">Meny</li>
-                        </Link>
-                        <Link style={navStyle} to="/info">
-                            <li className="link">Om Oss</li>
-                        </Link>
-                        <Link style={navStyle} to="/shop">
-                            <li className="link">Bestill og hent</li>
-                        </Link>
-                        <Link style={navStyle} to="/kontakt">
-                            <li className="link">Kontakt</li>
-                        </Link>
-                    <div style={navStyle} id="menu">
-                        <div id="hamburger">
-                            <span className="line line1 active"></span>
-                            <span className="line" id="line2"></span>
-                            <span className="line" id="line3"></span>
-                        </div>
+                    {navLinks}
+                    <div>
+                        <NavMenuButton />
                     </div>
                 </ul>
             </nav>

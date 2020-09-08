@@ -18,6 +18,10 @@ nav {
     letter-spacing: 2px;
 }
 
+.links {
+    display: none;
+}
+
 .link {
     padding: 0.4rem 1rem 0.4rem 1rem;
     text-transform: uppercase;
@@ -48,15 +52,24 @@ nav {
     height: auto;
 }
 
-#hamburger {
+#menu {
     display: grid;
     place-items: center;
     height: 40px;
     width: 100%;
+    border: 2px solid #e74222;
+    padding: 5px;
     cursor: pointer;
 }
 
+.nav-links:last-child {
+    display: block;
+    float: right;
+    margin-right: 20px;
+}
+
 .line {
+    width: 30px;
     height: 3px;
     background: #eeeeee;
     display: block;
@@ -64,38 +77,18 @@ nav {
 }
 
 .line1 {
-    width: 42px;
-    background: red;
-}
-
-.active, .line1 {
     transform-origin: center center;
-    transform: rotate(-45deg) translate(-4px, 12px);
+    transform: rotate(-45deg) translate(-6px, 5px);
+    background: #e74222;
 }
 
-#line2 {
+.line2 {
     opacity: 0;
 }
 
-#line3 {
+.line3 {
     transform-origin: center center;
-    transform: rotate(45deg) translate(-7px, -14px);
-    width: 42px;
-}
-
-#line1 .active {
-    transform-origin: center center;
-    transform: rotate(-45deg) translate(-12px, 12px);
-}
-
-#line2 .active {
-    transform: translateX(10px);
-    opacity: 0;
-}
-
-#line3 .active {
-    transform-origin: center center;
-    transform: rotate(45deg) translate(-15px, -14px);
+    transform: rotate(45deg) translate(-6px, -5px);
 }
 
 @media only screen and (max-width: 600px) {
@@ -116,10 +109,6 @@ nav {
         transform: translate(-50%, -50%);
         margin-left: 0;
     }
-
-    .nav-links :not(:last-child) {
-        display: none;
-    }
 }
 
 @media only screen and (max-width: 992px) and (orientation: landscape) {
@@ -134,10 +123,6 @@ nav {
         left: 50%;
         transform: translate(-50%, -50%);
         margin-left: 0;
-    }
-
-    .nav-links :not(:last-child) {
-        display: none;
     }
 
 }
