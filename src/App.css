@@ -20,7 +20,6 @@ body {
 /* The body of content on page below navbar */
 .case {
     width: 100%;
-    padding-top: 12vh;
     min-height: 100vh;
 }
 
