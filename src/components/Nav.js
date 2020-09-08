@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "../style/Nav.css";
 import logo from "../img/bamboo_logo.png";
 import NavMenuButton from "./NavMenuButton";
+import NavLinks from './NavLinks';
 
 // Style for Links
 const navStyle = {
@@ -11,37 +12,40 @@ const navStyle = {
     textDecoration: "none",
 };
 
-const navLinks = (
-    <div className="links">
-        <Link style={navStyle} to="/">
-            <li className="link">Hjem</li>
-        </Link>
-        <Link style={navStyle} to="/meny">
-            <li className="link">Meny</li>
-        </Link>
-        <Link style={navStyle} to="/info">
-            <li className="link">Om Oss</li>
-        </Link>
-        <Link style={navStyle} to="/shop">
-            <li className="link">Bestill og hent</li>
-        </Link>
-        <Link style={navStyle} to="/kontakt">
-            <li className="link">Kontakt</li>
-        </Link>
-    </div>
-);
-
 class Nav extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            toggle: false,
+            navName: ''   
+        }
+        this.toggleOverlay = this.toggleOverlay.bind(this);
+    }
+    toggleOverlay() {
+        if(!this.state.toggle) {
+            console.log("Toggled overlay");
+            this.setState({
+                toggle: !this.state.toggle,
+                navName: 'navOverlay'
+            });
+        } else {
+            this.setState({
+                toggle: !this.state.toggle,
+                navName: ''
+            }); 
+        }
+    }
+
     render() {
         return (
-            <nav className="navbar">
+            <nav className={this.state.navName}>
                 <Link style={navStyle} to="/" className="logo">
                     <img src={logo} alt="restaurant logo" />
                 </Link>
                 <ul className="nav-links">
-                    {navLinks}
-                    <div>
-                        <NavMenuButton />
+                    <NavLinks/>
+                    <div onClick={this.toggleOverlay}>
+                        <NavMenuButton/>
                     </div>
                 </ul>
             </nav>

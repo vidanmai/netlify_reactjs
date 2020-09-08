@@ -15,6 +15,7 @@ class AllergenButton extends React.Component {
         //Button is toggled, toggle off
         if (this.state.isToggleOn) {
             //Remove allergen
+            console.log("fjerner allergen: " + this.props.string);
             this.props.leggTilAllergen(this.props.string);
             this.setState(state => ({
                 isToggleOn: !state.isToggleOn,
@@ -23,6 +24,7 @@ class AllergenButton extends React.Component {
         } else {
             //Button is off, toggle on
             //Add allergen back to the list
+            console.log("legger til allergen: " + this.props.string);
             this.props.fjernAllergen(this.props.string);
             this.setState(state => ({
                 isToggleOn: !state.isToggleOn,

@@ -5,6 +5,7 @@ nav {
     background-color: #0c0c0c;
     overflow: hidden;
     z-index: 999;
+    transition: all 0.2s ease-in;
 }
 
 .nav-links {
@@ -53,6 +54,7 @@ nav {
 }
 
 #menu {
+    z-index: 100;
     display: grid;
     place-items: center;
     height: 40px;
@@ -91,8 +93,21 @@ nav {
     transform: rotate(45deg) translate(-6px, -5px);
 }
 
-@media only screen and (max-width: 600px) {
+/* Nav Overlay */
+.navOverlay {
+    height: 400px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
 
+.displayLinks {
+    display: flex;
+    flex-direction: row;
 }
 
 /* For tablets and smaller (tablets, phones, 768px and down) */
@@ -111,6 +126,12 @@ nav {
     }
 }
 
+@media only screen and (max-width: 600px) {
+    nav {
+        height: 10vh;
+    }
+}
+
 @media only screen and (max-width: 992px) and (orientation: landscape) {
     nav {
         height: 13vh;
@@ -125,6 +146,12 @@ nav {
         margin-left: 0;
     }
 
+}
+
+@media only screen and (max-width: 812px) and (orientation: landscape) {
+    nav {
+        height: 20vh;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */

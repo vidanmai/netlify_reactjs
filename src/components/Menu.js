@@ -26,6 +26,7 @@ class Menu extends React.Component {
                     this.setState(state => ({
                         allergenList: this.state.allergenList
                     }));
+                    console.log(this.state.allergenList);
                 }
             }
         }
@@ -37,6 +38,7 @@ class Menu extends React.Component {
             this.setState(state => ({
                 allergenList: this.state.allergenList
             }));
+            console.log(this.state.allergenList);
         }
     }
 

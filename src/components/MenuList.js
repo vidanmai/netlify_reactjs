@@ -41,18 +41,13 @@ function menuSection(dishes, kategoriNavn) {
 }
 
 class MenuList extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            dishes: dishes.filter(dish => (checkArray(this.props.allergenList, dish.allergener)))
-        }
-    }
 
     render() {
+        const filteredDishes = dishes.filter(dish => (checkArray(this.props.allergenList, dish.allergener)));
         return (
             <div>
-                {menuSection(this.state.dishes, 'Foretter')}
-                {menuSection(this.state.dishes, 'Thailandsk')}
+                {menuSection(filteredDishes, 'Foretter')}
+                {menuSection(filteredDishes, 'Thailandsk')}
             </div>
         );
     }
