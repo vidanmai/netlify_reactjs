@@ -40,8 +40,6 @@ function menuSection(dishes, kategoriNavn) {
     </div>);
 }
 
-const kategorier = ["Foretter", "Thailandsk", "Vietnamesisk", "Stekt ris - nudler"]
-
 class MenuList extends React.Component {
     constructor(props) {
         super(props);
