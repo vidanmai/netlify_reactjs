@@ -6,22 +6,14 @@ nav {
     background-color: #0c0c0c;
     overflow: hidden;
     z-index: 999;
-    transition: all 0.2s ease-in;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
-.nav-links {
-    display: flex;
-    margin-left: 39%;
-    max-width: 60%;
-    justify-content: space-evenly;
-    margin-top: 1.4rem;
-    font-size: calc(0.4em + 0.7vw);
-    white-space: nowrap;
-    letter-spacing: 2px;
-}
-
-.links {
-    display: none;
+.navGrid {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
 }
 
 .link {
@@ -55,7 +47,8 @@ nav {
 }
 
 #menuButton {
-    margin-right: 2vw;
+    display: grid;
+    align-items: center;
 }
 
 #menu {
@@ -63,10 +56,12 @@ nav {
     display: grid;
     place-items: center;
     height: 40px;
-    width: 100%;
+    width: 40px;
     border: 2px solid #e74222;
-    padding: 5px;
+    padding: 3px;
     cursor: pointer;
+    margin: 0 auto;
+    
 }
 
 .nav-links:last-child {
@@ -76,7 +71,7 @@ nav {
 }
 
 .line {
-    width: 30px;
+    width: 25px;
     height: 3px;
     background: #eeeeee;
     display: block;
@@ -85,7 +80,7 @@ nav {
 
 .line1 {
     transform-origin: center center;
-    transform: rotate(-45deg) translate(-6px, 5px);
+    transform: rotate(-45deg) translate(-7px, 7px);
     background: #e74222;
 }
 
@@ -95,82 +90,58 @@ nav {
 
 .line3 {
     transform-origin: center center;
-    transform: rotate(45deg) translate(-6px, -5px);
+    transform: rotate(45deg) translate(-7px, -7px);
 }
 
-/* Nav Overlay */
-.navOverlay {
-    height: 400px;
-    overflow-x: hidden;
-    overflow-y: auto;
-    margin: 0;
-    padding: 0;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+.links {
+    display: grid;
+    grid-auto-flow: row dense;
+    grid-gap: 5px;
+    overflow-x: scroll;
 }
 
-.displayLinks {
-    display: flex;
-    flex-direction: row;
+.displayNone {
+    opacity: 0;
+    height: 0;
+    width: 0;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.showNav {
+    height: 320px;
+    display: grid;
+    width: 20%;
+    margin-left: 20px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 /* For tablets and smaller (tablets, phones, 768px and down) */
-@media only screen and (max-width: 768px) {
-    nav {
-        height: 8vh;
+@media only screen and (max-width: 600px) {  
+    .navGrid {
+        grid-template-columns: 3fr 1fr 1fr;
     }
-    
+
     .logo {
-        float: none;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        margin-left: 0;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    nav {
-        height: 10vh;
-    }
-}
-
-@media only screen and (max-width: 992px) and (orientation: landscape) {
-    nav {
-        height: 13vh;
-    }
-    
-    .logo {
-        float: none;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        margin-left: 0;
+        padding: 0;
     }
 
-}
-
-@media only screen and (max-width: 812px) and (orientation: landscape) {
-    nav {
-        height: 20vh;
+    .showNav {
+        width: 70%;
     }
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-
+@media only screen and (max-width: 768px) {
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+@media only screen and (max-width: 992px) {
 
 }
 

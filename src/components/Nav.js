@@ -17,37 +17,41 @@ class Nav extends React.Component {
         super(props);
         this.state = {
             toggle: false,
-            navName: ''   
+            navName: 'displayNone'
         }
         this.toggleOverlay = this.toggleOverlay.bind(this);
     }
     toggleOverlay() {
-        if(!this.state.toggle) {
-            console.log("Toggled overlay");
+        if (!this.state.toggle) {
+            console.log("Enabled mobile nav");
             this.setState({
                 toggle: !this.state.toggle,
-                navName: 'navOverlay'
+                navName: 'showNav'
             });
         } else {
+            console.log("Disabled mobile nav")
             this.setState({
                 toggle: !this.state.toggle,
-                navName: ''
-            }); 
+                navName: 'displayNone'
+            });
         }
     }
 
     render() {
         return (
-            <nav className={this.state.navName}>
-                <Link style={navStyle} to="/" className="logo">
-                    <img src={logo} alt="restaurant logo" />
-                </Link>
-                <ul className="nav-links">
-                    <NavLinks/>
+            <nav>
+                <div className="navGrid">
+                    <Link style={navStyle} to="/" className="logo">
+                        <img src={logo} alt="restaurant logo" />
+                    </Link>
+                    <span className="space"></span>
                     <div id="menuButton" onClick={this.toggleOverlay}>
-                        <NavMenuButton/>
+                        <NavMenuButton />
                     </div>
-                </ul>
+                </div>
+                <div className={this.state.navName}>
+                    <NavLinks />
+                </div>
             </nav>
         );
     }

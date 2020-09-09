@@ -13,9 +13,9 @@ class NavMenuButton extends React.Component {
                 line2: "line2",
                 line3: "line3"
             });
-            console.log("Toggled active: " + this.state.toggleActive);
+            console.log("Toggled menu: " + this.state.toggleActive);
         } else {
-            console.log("Is active: " + this.state.toggleActive)
+            console.log("Disabling menu: " + this.state.toggleActive);
             this.setState({
                 toggleActive: !this.state.toggleActive,
                 line1: "",
