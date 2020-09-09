@@ -13,6 +13,7 @@ class NavMenuButton extends React.Component {
                 line2: "line2",
                 line3: "line3"
             });
+            this.props.toggleNav();
             console.log("Toggled menu: " + this.state.toggleActive);
         } else {
             console.log("Disabling menu: " + this.state.toggleActive);
@@ -22,6 +23,7 @@ class NavMenuButton extends React.Component {
                 line2: "",
                 line3: ""
             });
+            this.props.toggleNav();
         }
     }
 

@@ -19,6 +19,7 @@ nav {
 .link {
     padding: 0.4rem 1rem 0.4rem 1rem;
     text-transform: uppercase;
+    color: white;
 }
 
 .link:after {

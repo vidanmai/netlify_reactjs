@@ -45,8 +45,8 @@ class Nav extends React.Component {
                         <img src={logo} alt="restaurant logo" />
                     </Link>
                     <span className="space"></span>
-                    <div id="menuButton" onClick={this.toggleOverlay}>
-                        <NavMenuButton />
+                    <div id="menuButton">
+                        <NavMenuButton toggleNav={this.toggleOverlay}/>
                     </div>
                 </div>
                 <div className={this.state.navName}>
