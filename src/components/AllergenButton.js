@@ -37,7 +37,7 @@ class AllergenButton extends React.Component {
 
     render() {
         return (
-            <button className={this.state.className} onClick={this.handleClick}>{this.props.string}</button>
+            <button className={this.state.className} onClick={this.handleClick}>{this.props.description}</button>
         );
     }
 }

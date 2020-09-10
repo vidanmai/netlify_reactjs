@@ -48,7 +48,9 @@ class Home extends React.Component {
           <div className="bestillInfo">
             <h3>Vil du bestille og hente mat?</h3>
             <Link to="/shop">
-              <button className="bambooButton">Bestill mat</button>
+              <span className="buttonBackground">
+                <button className="bambooButton">Bestill mat</button>
+              </span>
             </Link>
           </div>
           <div className="secondGridImg">

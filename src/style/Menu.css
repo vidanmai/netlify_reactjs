@@ -1,8 +1,9 @@
 .buttonGrid {
     display: grid;
-    grid-auto-flow: column;
-    margin: 0 auto;
-    margin-top: 5vh;
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-gap: 8px;
+    border-radius: 2px;
 }
 
 .meny {
@@ -19,8 +20,8 @@
 }
 
 .allergenSeksjon {
-    font-size: 14px;
-    margin: 5vh 0;
+    margin: 3vh 0;
+    margin-top: 10vh;
 }
 
 .matrett {
@@ -54,18 +55,17 @@
 .allergenButton {
     background-color: #e74222;
     /* Green */
-    border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    margin-right: 5px;
-    margin-bottom: 5px;
+    font-size: 14px;
     transition-duration: 0.4s;
     cursor: pointer;
     border: 2px solid #e74222;
+    border-radius: 2px;
+    height: 70px;
 }
 
 .allergenButton:focus {
@@ -78,13 +78,6 @@
 }
 
 @media only screen and (max-width: 768px) {
-    
     .buttonGrid {
-        grid-auto-flow: row;
-        grid-gap: 10px;
-    }
-
-    .buttonGrid button {
-        width: 100%;
     }
 }

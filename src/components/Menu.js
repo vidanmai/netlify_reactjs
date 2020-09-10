@@ -2,9 +2,7 @@ import React from 'react';
 import '../style/Menu.css';
 import AllergenButton from './AllergenButton';
 import MenuList from './MenuList';
-import { allergener } from './Allergener';
-
-const sortedAllergens = allergener.sort();
+import { allergenDescriptions } from './Allergener';
 
 class Menu extends React.Component {
     constructor(props) {
@@ -57,19 +55,17 @@ class Menu extends React.Component {
                     <div className="meny">
                         <div className="sageneMeny">
                             <div className="allergenSeksjon">
-                                <p>Allergener:
-                                    <br />
-                                    Gluten ( G – hvete ) | Egg ( E ) | Fisk ( F ) | Peanøtter ( P ) | Soya ( S ) | Nøtter ( N ) | Selleri ( Sel ) | Sennep ( Sen ) | Sesamfrø ( Se ) | Svoveldioksid og sulfitter ( Sv ) | Skalldyr ( Sk ) | Bløtdyr ( Bl ) </p>
+                                <h3>Allergener</h3>
                             </div>
-                            <div id="allergenButtonGrid">
-                                {sortedAllergens.map(allergen => {
+                            <div className="buttonGrid">
+                                {allergenDescriptions.map(allergen => {
                                     //Allergen Button
-                                    return <AllergenButton key={allergen} string={allergen} fjernAllergen={this.fjernAllergen} leggTilAllergen={this.leggTilAllergen} sorterAllergener={this.sorterAllergener} />
+                                    return <AllergenButton key={allergen.entry} description={allergen.desc} string={allergen.entry} fjernAllergen={this.fjernAllergen} leggTilAllergen={this.leggTilAllergen} sorterAllergener={this.sorterAllergener} />
                                 })}
                             </div>
                             { /* Matrett seksjon */}
                             <div className="menySeksjon">
-                                <MenuList allergenList={this.state.allergenList}/>
+                                <MenuList allergenList={this.state.allergenList} />
                             </div>
                         </div>
                     </div>
