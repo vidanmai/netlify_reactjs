@@ -39,7 +39,7 @@ nav {
 
 .logo {
     float: left;
-    margin-left: 2rem;
+    margin-left: 1rem;
 }
 
 .logo img {
@@ -127,7 +127,7 @@ nav {
     }
 
     .logo {
-        padding: 0;
+        margin-left: 8px;
     }
 
 }
