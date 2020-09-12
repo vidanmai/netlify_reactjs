@@ -8,11 +8,15 @@ class Menu extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            allergenList: []
+            allergenList: [],
+            toggleFilter: false,
+            filterInput: '+',
+            filterName: 'displayNone'
         };
         this.fjernAllergen = this.fjernAllergen.bind(this);
         this.leggTilAllergen = this.leggTilAllergen.bind(this);
         this.sorterAllergener = this.sorterAllergener.bind(this);
+        this.openFilter = this.openFilter.bind(this);
     }
 
 
@@ -42,9 +46,25 @@ class Menu extends React.Component {
 
     sorterAllergener() {
         this.state.allergenList.sort();
-        this.setState(state => ({
+        this.setState({
             allergenList: this.state.allergenList
-        }));
+        });
+    }
+
+    openFilter() {
+        if (this.state.toggleFilter) {
+            this.setState({
+                toggleFilter: !this.state.toggleFilter,
+                filterInput: '-',
+                filterName: 'buttonGrid',
+            });
+        } else {
+            this.setState({
+                toggleFilter: !this.state.toggleFilter,
+                filterInput: '+',
+                filterName: 'displayNone',
+            });
+        }
     }
 
     render() {
@@ -55,21 +75,21 @@ class Menu extends React.Component {
                     <div className="meny">
                         <div className="sageneMeny">
                             <div className="allergenSeksjon">
-                                <h3>Filter</h3>
-                            </div>
-                            <div className="buttonGrid">
-                                {allergenDescriptions.map((allergen, i) => {
-                                    //Allergen Button
-                                    if(allergenDescriptions.length - 1 === i) {
+                                <div className="filterHeader">
+                                    <div className="filterTitle">
+                                        <h3>Filter</h3>
+                                    </div>
+                                    <div>
+                                        <span className="filterToggle" onClick={this.openFilter}>{this.state.filterInput}</span>
+                                    </div>
+                                </div>
+                                <div className={this.state.filterName}>
+                                    {allergenDescriptions.map(allergen => {
                                         return <AllergenButton key={allergen.entry} description={allergen.desc} string={allergen.entry} fjernAllergen={this.fjernAllergen} leggTilAllergen={this.leggTilAllergen} sorterAllergener={this.sorterAllergener} />;
-                                    } else {
-                                        return (<React.Fragment key={allergen.entry}>
-                                            <AllergenButton key={allergen.entry} description={allergen.desc} string={allergen.entry} fjernAllergen={this.fjernAllergen} leggTilAllergen={this.leggTilAllergen} sorterAllergener={this.sorterAllergener} />
-                                            <div className="hyphen">-</div>
-                                        </React.Fragment>);
-                                    }
-                                })}
+                                    })}
+                                </div>
                             </div>
+
                             { /* Matrett seksjon */}
                             <div className="menySection">
                                 <MenuList allergenList={this.state.allergenList} />

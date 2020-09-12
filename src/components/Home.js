@@ -2,7 +2,7 @@ import React from "react";
 import "../style/Home.css";
 //import bambooSagene from "../img/bambooOutside.PNG";
 import foodPic from '../img/bamboo_sushi_bg.jpg';
-import sushiLarge from '../img/bamboo_bg_3.jpg';
+import sushiLarge from '../img/bamboo_bg.jpg';
 import { Link } from 'react-router-dom';
 import Contact from '../components/Contact';
 
@@ -18,7 +18,7 @@ class Home extends React.Component {
         </div>
         <div className="landingPage">
           <div className="landingImg">
-            <img src={foodPic} className="landingImg" alt="" />
+            <img src={foodPic} className="responsiveImg" alt="" />
           </div>
           <div className="landingInfo">
             <div className="info">
@@ -37,9 +37,9 @@ class Home extends React.Component {
                 13:00 - 22:00
                 <br />
                 <br />
-                <span className="orangeBorder">
+                <p className="orangeBorder">
                   Kjøkkenet stenger <strong>21:45</strong> hele uken
-                </span>
+                </p>
               </p>
             </div>
           </div>

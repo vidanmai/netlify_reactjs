@@ -1,16 +1,10 @@
 .buttonGrid {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .meny {
-    margin-top: 2vh;
     font-size: 1.1rem;
-}
-
-.meny h1, h2, h3 {
-    margin-top: 2rem;
 }
 
 .meny ul li {
@@ -18,31 +12,53 @@
 }
 
 .allergenSeksjon {
-    margin: 3vh 0;
-    margin-top: 10vh;
+    margin: 2.5rem 0;
+}
+
+.filterHeader {
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+
+.filterTitle {
+    display: grid;
+    place-items: center;
+    width: 10%;
+}
+
+.filterToggle {
+    cursor: pointer;
+    font-size: 2rem;
+    float: right;
+    -webkit-user-select: none; /* Chrome/Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+    /* Rules below not implemented in browsers yet */
+    -o-user-select: none;
+    user-select: none;
+    padding: 5px;
 }
 
 #resetAllergen {
     margin: 0.5rem 0;
     border: 1px solid black;
-    width: 100%;
 }
 
 .dish {
     margin: 2rem 0;
     display: grid;
-    grid-template-columns: 9fr 1fr;
+    grid-template-columns: 7fr 2fr;
 }
 
 .grey-dish {
     margin: 2rem 0;
     display: grid;
-    grid-template-columns: 9fr 1fr;
+    grid-template-columns: 7fr 2fr;
     color: #bdbdbd;
 }
 
 .menySection {
-    margin: 3rem 0;
+    margin: 2rem 0;
 }
 
 .navn {
@@ -67,22 +83,6 @@
 .pris {
     text-align: right;
 }
-/*
-.allergenButton {
-    background-color: #e74222;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    border: 2px solid #e74222;
-    border-radius: 2px;
-    height: 70px;
-}
-*/
 
 .allergenButton {
     cursor: pointer;
@@ -95,6 +95,8 @@
     /* Rules below not implemented in browsers yet */
     -o-user-select: none;
     user-select: none;
+    font-size: 1rem;
+    width: fit-content;
 }
 
 .allergenButton:focus {
@@ -109,6 +111,10 @@
     margin-top: 5px;
     margin-left: 10px;
     margin-right: 10px;
+}
+
+.displayNone {
+    display: none;
 }
 
 @media only screen and (max-width: 768px) {
