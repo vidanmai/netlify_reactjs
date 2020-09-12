@@ -52,13 +52,15 @@ class Menu extends React.Component {
     }
 
     openFilter() {
-        if (this.state.toggleFilter) {
+        if (!this.state.toggleFilter) {
+            console.log("Toggled filter");
             this.setState({
                 toggleFilter: !this.state.toggleFilter,
                 filterInput: '-',
                 filterName: 'buttonGrid',
             });
         } else {
+            console.log("Disabled filter");
             this.setState({
                 toggleFilter: !this.state.toggleFilter,
                 filterInput: '+',
