@@ -20,10 +20,10 @@ class Menu extends React.Component {
         if (this.state.allergenList.includes(allergen)) {
             for (let i = 0; i < this.state.allergenList.length; i++) {
                 if (this.state.allergenList[i] === allergen) {
-                    this.state.allergenList.splice(i, 1);
-                    this.setState(state => ({
+                    this.state.allergenList.splice(i, 1); //Removes the allergen from array
+                    this.setState({
                         allergenList: this.state.allergenList
-                    }));
+                    });
                     console.log(this.state.allergenList);
                 }
             }
@@ -33,9 +33,9 @@ class Menu extends React.Component {
     leggTilAllergen(allergen) {
         if (!this.state.allergenList.includes(allergen)) {
             this.state.allergenList.push(allergen);
-            this.setState(state => ({
+            this.setState({
                 allergenList: this.state.allergenList
-            }));
+            });
             console.log(this.state.allergenList);
         }
     }
@@ -55,16 +55,23 @@ class Menu extends React.Component {
                     <div className="meny">
                         <div className="sageneMeny">
                             <div className="allergenSeksjon">
-                                <h3>Allergener</h3>
+                                <h3>Filter</h3>
                             </div>
                             <div className="buttonGrid">
-                                {allergenDescriptions.map(allergen => {
+                                {allergenDescriptions.map((allergen, i) => {
                                     //Allergen Button
-                                    return <AllergenButton key={allergen.entry} description={allergen.desc} string={allergen.entry} fjernAllergen={this.fjernAllergen} leggTilAllergen={this.leggTilAllergen} sorterAllergener={this.sorterAllergener} />
+                                    if(allergenDescriptions.length - 1 === i) {
+                                        return <AllergenButton key={allergen.entry} description={allergen.desc} string={allergen.entry} fjernAllergen={this.fjernAllergen} leggTilAllergen={this.leggTilAllergen} sorterAllergener={this.sorterAllergener} />;
+                                    } else {
+                                        return (<React.Fragment key={allergen.entry}>
+                                            <AllergenButton key={allergen.entry} description={allergen.desc} string={allergen.entry} fjernAllergen={this.fjernAllergen} leggTilAllergen={this.leggTilAllergen} sorterAllergener={this.sorterAllergener} />
+                                            <div className="hyphen">-</div>
+                                        </React.Fragment>);
+                                    }
                                 })}
                             </div>
                             { /* Matrett seksjon */}
-                            <div className="menySeksjon">
+                            <div className="menySection">
                                 <MenuList allergenList={this.state.allergenList} />
                             </div>
                         </div>

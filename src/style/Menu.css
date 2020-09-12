@@ -1,18 +1,16 @@
 .buttonGrid {
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-    grid-gap: 8px;
-    border-radius: 2px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .meny {
-    margin-top: 3vh;
+    margin-top: 2vh;
     font-size: 1.1rem;
 }
 
 .meny h1, h2, h3 {
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 .meny ul li {
@@ -24,19 +22,37 @@
     margin-top: 10vh;
 }
 
-.matrett {
+#resetAllergen {
+    margin: 0.5rem 0;
+    border: 1px solid black;
+    width: 100%;
+}
+
+.dish {
     margin: 2rem 0;
     display: grid;
     grid-template-columns: 9fr 1fr;
 }
 
-.menySeksjon {
+.grey-dish {
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: 9fr 1fr;
+    color: #bdbdbd;
+}
+
+.menySection {
     margin: 3rem 0;
 }
 
 .navn {
     color: #212121;
-    font-size: 1rem;
+    font-size: 1.05rem;
+}
+
+.grey-navn {
+    color: #bdbdbd;
+    font-size: 1.05rem;   
 }
 
 .beskrivelse {
@@ -51,10 +67,9 @@
 .pris {
     text-align: right;
 }
-
+/*
 .allergenButton {
     background-color: #e74222;
-    /* Green */
     color: white;
     padding: 10px;
     text-align: center;
@@ -67,17 +82,34 @@
     border-radius: 2px;
     height: 70px;
 }
+*/
+
+.allergenButton {
+    cursor: pointer;
+    letter-spacing: 2px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    -webkit-user-select: none; /* Chrome/Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+    /* Rules below not implemented in browsers yet */
+    -o-user-select: none;
+    user-select: none;
+}
 
 .allergenButton:focus {
     outline-color: #212121;
 }
 
 .active {
-    background-color: transparent;
-    color: black;
+    color: #12e71c;
+}
+
+.hyphen {
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 @media only screen and (max-width: 768px) {
-    .buttonGrid {
-    }
 }

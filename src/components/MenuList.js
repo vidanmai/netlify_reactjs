@@ -21,21 +21,23 @@ function kategoriSjekk(dish, kategoriNavn) {
     return false;
 }
 
-function getDish(dish, kategoriNavn) {
+function getDish(dish, allergenList, kategoriNavn) {
     if (kategoriSjekk(dish, kategoriNavn)) {
-        return (
-            <Dish key={dish.index} index={dish.index} navn={dish.navn} beskrivelse={dish.beskrivelse} allergener={dish.allergener} pris={dish.pris} />
-        );
+        if(checkArray(allergenList, dish.allergener)) {
+            return <Dish key={dish.index} styleName="dish" index={dish.index} navn={dish.navn} nameStyle="navn" beskrivelse={dish.beskrivelse} allergener={dish.allergener} pris={dish.pris} />;
+        } else {
+            return <Dish key={dish.index} styleName="grey-dish" index={dish.index} navn={dish.navn} nameStyle="grey-navn" beskrivelse={dish.beskrivelse} allergener={dish.allergener} pris={dish.pris} />;
+        }
     } else {
         return null;
     }
 }
 
-function menuSection(dishes, kategoriNavn) {
+function menuSection(dishes, allergenList, kategoriNavn) {
     return (<div className="menuSection">
         <h2>{kategoriNavn}</h2>
         {dishes.map(dish => {
-            return getDish(dish, kategoriNavn);
+            return getDish(dish, allergenList, kategoriNavn);
         })}
     </div>);
 }
@@ -43,11 +45,10 @@ function menuSection(dishes, kategoriNavn) {
 class MenuList extends React.Component {
 
     render() {
-        const filteredDishes = dishes.filter(dish => (checkArray(this.props.allergenList, dish.allergener)));
         return (
             <div>
-                {menuSection(filteredDishes, 'Foretter')}
-                {menuSection(filteredDishes, 'Thailandsk')}
+                {menuSection(dishes, this.props.allergenList, 'Foretter')}
+                {menuSection(dishes, this.props.allergenList, 'Thailandsk')}
             </div>
         );
     }

@@ -3,7 +3,7 @@ import React from "react";
 class AllergenButton extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { isToggleOn: true, className: 'allergenButton' };
+        this.state = { isToggleOn: true, className: "allergenButton" };
         this.handleClick = this.handleClick.bind(this);
     }
 
@@ -17,18 +17,18 @@ class AllergenButton extends React.Component {
             //Remove allergen
             console.log("fjerner allergen: " + this.props.string);
             this.props.leggTilAllergen(this.props.string);
-            this.setState(state => ({
+            this.setState((state) => ({
                 isToggleOn: !state.isToggleOn,
-                className: 'allergenButton active'
+                className: "allergenButton active",
             }));
         } else {
             //Button is off, toggle on
             //Add allergen back to the list
             console.log("legger til allergen: " + this.props.string);
             this.props.fjernAllergen(this.props.string);
-            this.setState(state => ({
+            this.setState((state) => ({
                 isToggleOn: !state.isToggleOn,
-                className: 'allergenButton'
+                className: "allergenButton",
             }));
         }
         //Sort the allergens last
@@ -37,7 +37,11 @@ class AllergenButton extends React.Component {
 
     render() {
         return (
-            <button className={this.state.className} onClick={this.handleClick}>{this.props.description}</button>
+            <div>
+                <div className={this.state.className} onClick={this.handleClick}>
+                    {this.props.description}
+                </div>
+            </div>
         );
     }
 }

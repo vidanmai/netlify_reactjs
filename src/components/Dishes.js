@@ -1,6 +1,8 @@
 //List of dishes on menu
 
-export const dishes = [{
+export const dishes = [
+    //Vietnamesisk
+    {
         index: 1,
         kategori: 'foretter',
         navn: 'Kinesiske vårruller (2 stk)',
@@ -52,7 +54,7 @@ export const dishes = [{
         index: 10,
         kategori: 'foretter',
         navn: 'Rekechips',
-        beskrivelse: 'Fritert ris-chips m/ rekesmak',
+        beskrivelse: 'Fritert ris-chips med rekesmak',
         allergener: ['Sk'],
         pris: 28
     },

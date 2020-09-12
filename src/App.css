@@ -81,7 +81,7 @@ body {
     background-position: right bottom;
     color: white;
     border: 2px solid black;
-    transition: 0.2s ease-in;
+    transition: 0.25s ease-in;
 }
 
 .bambooButton2 {
@@ -92,19 +92,19 @@ body {
     background-position: right bottom;
     color: white;
     border: 2px solid #e74222;
-    transition: 0.2s ease-in;
+    transition: 0.25s ease-in;
 }
 
 .bambooButton:hover {
     background-position: left bottom;
     color: black;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.25s ease-in-out;
 }
 
 .bambooButton2:hover {
     background-position: left bottom;
     color: black;
-    transition: all 0.3s ease-out;
+    transition: all 0.25s ease-out;
 }
 
 .bambooButton:focus,
