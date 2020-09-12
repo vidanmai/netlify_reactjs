@@ -9,9 +9,13 @@ nav {
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
-
 }
 
+.scrollable {
+    height: 100vh;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+}
 .navGrid {
     display: grid;
     grid-template-columns: 1fr 5fr 1fr;
@@ -39,7 +43,7 @@ nav {
 
 .logo {
     float: left;
-    margin-left: 1rem;
+    margin-left: 2rem;
 }
 
 .logo img {
@@ -124,10 +128,6 @@ nav {
 
     .space {
         display: none;
-    }
-
-    .logo {
-        margin-left: 8px;
     }
 
 }

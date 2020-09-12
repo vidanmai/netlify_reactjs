@@ -17,6 +17,7 @@ class Nav extends React.Component {
         super(props);
         this.state = {
             toggle: false,
+            navStyle: '',
             navName: 'displayNone'
         }
         this.toggleOverlay = this.toggleOverlay.bind(this);
@@ -26,12 +27,14 @@ class Nav extends React.Component {
             console.log("Enabled mobile nav");
             this.setState({
                 toggle: !this.state.toggle,
+                navStyle: 'scrollable',
                 navName: 'showNav'
             });
         } else {
             console.log("Disabled mobile nav")
             this.setState({
                 toggle: !this.state.toggle,
+                navStyle: '',
                 navName: 'displayNone'
             });
         }
@@ -39,7 +42,7 @@ class Nav extends React.Component {
 
     render() {
         return (
-            <nav>
+            <nav className={this.state.navStyle}>
                 <div className="navGrid">
                     <div className="logo">
                         <Link style={navStyle} to="/" className="logo">
