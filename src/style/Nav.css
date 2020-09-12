@@ -6,9 +6,10 @@ nav {
     background-color: #0c0c0c;
     overflow: hidden;
     z-index: 999;
-    -webkit-transition: all 0.15s ease;
-    -moz-transition: all 0.15s ease;
-    transition: all 0.15s ease;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+
 }
 
 .navGrid {
@@ -59,7 +60,7 @@ nav {
     height: 40px;
     width: 40px;
     border: 2px solid #e74222;
-    padding: 3px;
+    padding: 5px;
     cursor: pointer;
     margin: 0 auto;
     
@@ -72,7 +73,7 @@ nav {
 }
 
 .line {
-    width: 25px;
+    width: 23px;
     height: 3px;
     background: #eeeeee;
     display: block;
@@ -81,7 +82,7 @@ nav {
 
 .line1 {
     transform-origin: center center;
-    transform: rotate(-45deg) translate(-7px, 7px);
+    transform: rotate(-45deg) translate(-6px, 6px);
     background: #e74222;
 }
 
@@ -91,7 +92,7 @@ nav {
 
 .line3 {
     transform-origin: center center;
-    transform: rotate(45deg) translate(-7px, -7px);
+    transform: rotate(45deg) translate(-6px, -6px);
 }
 
 .links {
@@ -103,41 +104,36 @@ nav {
 .showNav {
     height: 400px;
     display: grid;
-    max-width: fit-content;
-    margin-left: 20px;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    width: 100%;
+    justify-items: center;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    border-top: 3px solid #e74222;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
+    text-align: center;
 }
 
-.showNav .link {
-    width: fit-content;
-}
 
 /* For tablets and smaller (tablets, phones, 768px and down) */
 @media only screen and (max-width: 600px) {  
     .navGrid {
-        grid-template-columns: 3fr 1fr 1fr;
+        grid-template-columns: 4fr 1fr;
+    }
+
+    .space {
+        display: none;
     }
 
     .logo {
         padding: 0;
     }
 
-    .showNav {
-        width: 70%;
-    }
 }
 
 @media only screen and (max-width: 812px) and (orientation: landscape) {
-    .showNav {
-        height: 300px;
-        width: 30%;
-        margin: 0 auto;
-        text-align-last: center;
-    }
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */

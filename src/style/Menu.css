@@ -4,6 +4,10 @@
     max-height: 500px;
     background-color: #eeeeee;
     padding: 10px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 }
 
