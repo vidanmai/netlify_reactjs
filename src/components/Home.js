@@ -37,10 +37,10 @@ class Home extends React.Component {
                 13:00 - 22:00
                 <br />
                 <br />
-                <p className="orangeBorder">
+              </p>
+              <p className="orangeBorder">
                   Kjøkkenet stenger <strong>21:45</strong> hele uken
                 </p>
-              </p>
             </div>
           </div>
         </div>
