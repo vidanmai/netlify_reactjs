@@ -41,10 +41,12 @@ class Nav extends React.Component {
         return (
             <nav>
                 <div className="navGrid">
-                    <Link style={navStyle} to="/" className="logo">
-                        <img src={logo} alt="restaurant logo" />
-                    </Link>
-                    <span className="space"></span>
+                    <div className="logo">
+                        <Link style={navStyle} to="/" className="logo">
+                            <img src={logo} alt="restaurant logo" />
+                        </Link>
+                    </div>
+                    <div className="space"></div    >
                     <div id="menuButton">
                         <NavMenuButton toggleNav={this.toggleOverlay}/>
                     </div>

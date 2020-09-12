@@ -1,6 +1,10 @@
 .buttonGrid {
     display: flex;
     flex-direction: column;
+    max-height: 500px;
+    background-color: #eeeeee;
+    padding: 10px;
+    transition: all 0.2s ease-in-out;
 }
 
 .meny {
@@ -105,10 +109,6 @@
     margin-top: 5px;
     margin-left: 10px;
     margin-right: 10px;
-}
-
-.displayNone {
-    display: none;
 }
 
 @media only screen and (max-width: 768px) {
