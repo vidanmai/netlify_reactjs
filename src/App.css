@@ -136,7 +136,7 @@ body {
     width: fit-content;
     margin: 0 auto;
     text-align: center;
-    transition: all 0.3s ease-out;
+    transition: all 0.25s ease-in-out;
 }
 
 .hide {

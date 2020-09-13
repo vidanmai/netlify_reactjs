@@ -41,7 +41,7 @@ nav {
 
 .logo {
     float: left;
-    margin-left: 2rem;
+    margin-left: 2%;
 }
 
 .logo img {
@@ -137,11 +137,11 @@ nav {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 992px) {
+
     .showNav {
         height: 1000px;
     }
 
-    
     .links a {
         height: fit-content;
         margin: 1rem;
