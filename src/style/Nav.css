@@ -6,8 +6,6 @@ nav {
     background-color: #0c0c0c;
     overflow: hidden;
     z-index: 999;
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 }
 
@@ -31,6 +29,10 @@ nav {
     height: 3px;
     width: 0;
     margin-top: 8px;
+}
+
+.link:hover {
+    width: 100%;
 }
 
 .link:hover:after {
@@ -103,30 +105,23 @@ nav {
     grid-gap: 5px;
 }
 
-.showNav {
-    height: 320px;
-    max-height: 500px;
-    display: grid;
-    justify-items: center;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    border-top: 3px solid #e74222;
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-    text-align: center;
+.links a {
+    height: fit-content;
 }
 
+.showNav {
+    height: 280px;
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+    padding-top: 1rem;
+}
 
 /* For tablets and smaller (tablets, phones, 768px and down) */
 @media only screen and (max-width: 600px) {  
     .navGrid {
         grid-template-columns: 4fr 1fr;
-        width: 100%;
-    }
-
-    .space {
-        display: none;
     }
 
 }
@@ -142,14 +137,23 @@ nav {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 992px) {
+    .showNav {
+        height: 1000px;
+    }
+
+    
+    .links a {
+        height: fit-content;
+        margin: 1rem;
+    }
+    .showNav, .links {
+        padding: 1rem 0;
+    }
+
     .scrollable {
         height: 100vh;
         overflow-y: scroll;
         -webkit-overflow-scrolling: touch;
-    }
-
-    .showNav .links {
-        height: 60vh;
     }
 }
 

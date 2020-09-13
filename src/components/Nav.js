@@ -18,10 +18,15 @@ class Nav extends React.Component {
         this.state = {
             toggle: false,
             navStyle: '',
-            navName: 'displayNone'
+            navName: 'displayNone',
+            line1: '',
+            line2: '',
+            line3: ''
         }
         this.toggleOverlay = this.toggleOverlay.bind(this);
         this.hideMenu = this.hideMenu.bind(this);
+        this.toggleNav = this.toggleNav.bind(this);
+        this.closeNav = this.closeNav.bind(this);
     }
 
     toggleOverlay() {
@@ -37,7 +42,7 @@ class Nav extends React.Component {
             this.setState({
                 toggle: !this.state.toggle,
                 navStyle: '',
-                navName: 'displayNone'
+                navName: 'hideNav'
             });
         }
     }
@@ -49,7 +54,49 @@ class Nav extends React.Component {
             this.setState({
                 toggle: !this.state.toggle,
                 navStyle: '',
-                navName: 'displayNone'
+                navName: 'displayNone',
+                line1: '',
+                line2: '',
+                line3: ''
+            });
+        }
+    }
+
+    closeNav() {
+        if(this.state.toggle) {
+            console.log("Disabled mobile nav");
+            this.setState({
+                toggle: !this.state.toggle,
+                navStyle: '',
+                navName: 'hideNav',
+                line1: '',
+                line2: '',
+                line3: ''
+            });
+        } 
+    }
+
+    toggleNav() {
+        //If toggled, reset menuButton
+        if(this.state.toggle) {
+            console.log("Clicked link. Disable menu");
+            this.setState({
+                toggle: !this.state.toggle,
+                navStyle: '',
+                navName: 'hideNav',
+                line1: '',
+                line2: '',
+                line3: ''
+            });
+        } else {
+            console.log("Toggle nav");
+            this.setState({
+                toggle: !this.state.toggle,
+                navStyle: 'scrollable',
+                navName: 'showNav',
+                line1: 'line1',
+                line2: 'line2',
+                line3: 'line3'
             });
         }
     }
@@ -59,12 +106,12 @@ class Nav extends React.Component {
             <nav className={this.state.navStyle}>
                 <div className="navGrid">
                     <div className="logo">
-                        <Link style={navStyle} to="/" className="logo">
+                        <Link style={navStyle} to="/" className="logo" onClick={this.closeNav}>
                             <img src={logo} alt="restaurant logo" />
                         </Link>
                     </div>
                     <div id="menuButton">
-                        <NavMenuButton toggleNav={this.toggleOverlay}/>
+                        <NavMenuButton toggleNav={this.toggleNav} line1={this.state.line1} line2={this.state.line2} line3={this.state.line3}/>
                     </div>
                 </div>
                 <div className={this.state.navName}>

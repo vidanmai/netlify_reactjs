@@ -122,12 +122,21 @@ body {
 .displayNone {
     height: 0;
     opacity: 0;
+    width: fit-content;
+    margin: 0 auto;
     text-align: center;
-    -webkit-transition: height 0.2s ease-in-out;
-    -moz-transition: height 0.2s ease-in-out;
-    transition: height 0.2s ease-in-out;
     transition-property: all;
-    animation-delay: 1s;
+    transition-duration: 0.7s;
+    transition-delay: 0.3s;
+}
+
+.hideNav {
+    height: 0;
+    opacity: 0;
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+    transition: all 0.3s ease-out;
 }
 
 .hide {
@@ -161,7 +170,25 @@ body {
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+@media only screen and (max-width: 992px) {
+    .displayNone {
+        height: 0;
+        opacity: 0;
+        margin: 0 auto;
+        text-align: center;
+        transition-property: all;
+        transition-duration: 0.5s;
+        transition-delay: 0.45s;
+    }
+
+    .hideNav {
+        height: 0;
+        opacity: 0;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        transition: height 0.25s ease-in-out;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
