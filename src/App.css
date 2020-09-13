@@ -108,11 +108,6 @@ body {
     transition: all 0.25s ease-out;
 }
 
-.bambooButton:focus,
-.bambooButton2:focus {
-    outline: none;
-}
-
 .bambooButton:active,
 .bambooButton2:active {
     transform: translateY(3px);
@@ -126,8 +121,8 @@ body {
     margin: 0 auto;
     text-align: center;
     transition-property: all;
-    transition-duration: 0.7s;
-    transition-delay: 0.3s;
+    transition-duration: 0.2s;
+    transition-delay: 0s;
 }
 
 .hideNav {
@@ -136,7 +131,7 @@ body {
     width: fit-content;
     margin: 0 auto;
     text-align: center;
-    transition: all 0.25s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .hide {
@@ -177,8 +172,8 @@ body {
         margin: 0 auto;
         text-align: center;
         transition-property: all;
-        transition-duration: 0.5s;
-        transition-delay: 0.45s;
+        transition-duration: 0.25s;
+        transition-delay: 0.25s;
     }
 
     .hideNav {
