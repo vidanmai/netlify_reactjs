@@ -172,8 +172,8 @@ body {
         margin: 0 auto;
         text-align: center;
         transition-property: all;
-        transition-duration: 0.25s;
-        transition-delay: 0.25s;
+        transition-duration: 0.375s;
+        transition-delay: 0.28s;
     }
 
     .hideNav {
