@@ -21,7 +21,9 @@ class Nav extends React.Component {
             navName: 'displayNone'
         }
         this.toggleOverlay = this.toggleOverlay.bind(this);
+        this.hideMenu = this.hideMenu.bind(this);
     }
+
     toggleOverlay() {
         if (!this.state.toggle) {
             console.log("Enabled mobile nav");
@@ -40,6 +42,18 @@ class Nav extends React.Component {
         }
     }
 
+    hideMenu() {
+        //If the nav is toggled, disable on click
+        if(this.state.toggle) {
+            console.log("Disabled mobile nav")
+            this.setState({
+                toggle: !this.state.toggle,
+                navStyle: '',
+                navName: 'displayNone'
+            });
+        }
+    }
+
     render() {
         return (
             <nav className={this.state.navStyle}>
@@ -49,13 +63,14 @@ class Nav extends React.Component {
                             <img src={logo} alt="restaurant logo" />
                         </Link>
                     </div>
-                    <div className="space"></div>
                     <div id="menuButton">
                         <NavMenuButton toggleNav={this.toggleOverlay}/>
                     </div>
                 </div>
                 <div className={this.state.navName}>
-                    <NavLinks />
+                    <div onClick={this.hideMenu}>
+                        <NavLinks/>
+                    </div>
                 </div>
             </nav>
         );

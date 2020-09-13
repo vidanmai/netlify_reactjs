@@ -21,6 +21,7 @@
 
 .allergenSeksjon {
     margin: 2.5rem 0;
+    transition: all 0.2s ease-in-out;
 }
 
 .filterHeader {

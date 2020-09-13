@@ -11,7 +11,7 @@ class Menu extends React.Component {
             allergenList: [],
             toggleFilter: false,
             filterInput: '+',
-            filterName: 'displayNone'
+            filterName: 'hide'
         };
         this.fjernAllergen = this.fjernAllergen.bind(this);
         this.leggTilAllergen = this.leggTilAllergen.bind(this);
@@ -64,7 +64,7 @@ class Menu extends React.Component {
             this.setState({
                 toggleFilter: !this.state.toggleFilter,
                 filterInput: '+',
-                filterName: 'displayNone',
+                filterName: 'hide',
             });
         }
     }
