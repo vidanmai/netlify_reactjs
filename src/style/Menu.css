@@ -116,5 +116,13 @@
     margin-right: 10px;
 }
 
+.hideFilter {
+    height: 0;
+    opacity: 0;
+    width: fit-content;
+    background-color: red;
+    transition: all 0.2s ease-in-out;
+}
+
 @media only screen and (max-width: 768px) {
 }

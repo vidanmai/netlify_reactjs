@@ -64,7 +64,7 @@ class Menu extends React.Component {
             this.setState({
                 toggleFilter: !this.state.toggleFilter,
                 filterInput: '+',
-                filterName: 'hide',
+                filterName: 'hideFilter',
             });
         }
     }
