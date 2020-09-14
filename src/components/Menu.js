@@ -11,7 +11,7 @@ class Menu extends React.Component {
             allergenList: [],
             toggleFilter: false,
             filterInput: '+',
-            filterName: 'hide'
+            filterName: 'hideFilter'
         };
         this.fjernAllergen = this.fjernAllergen.bind(this);
         this.leggTilAllergen = this.leggTilAllergen.bind(this);
