@@ -120,6 +120,7 @@ body {
     width: fit-content;
     margin: 0 auto;
     text-align: center;
+    overflow: hidden;
     /* Remove to add transition
     transition-property: all;
     transition-duration: 0.2s;
@@ -128,6 +129,7 @@ body {
 }
 
 .hideNav {
+    overflow: hidden;
     height: 0;
     opacity: 0;
     width: fit-content;
@@ -162,7 +164,7 @@ body {
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1024px) {
 
     .displayNone {
         height: 0;
@@ -177,10 +179,21 @@ body {
     .hideNav {
         height: 0;
         opacity: 0;
-        width: 100%;
         margin: 0 auto;
         text-align: center;
         transition: height 0.25s ease-in-out;
+    }
+}
+
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+    .displayNone {
+        height: 0;
+        opacity: 0;
+        margin: 0 auto;
+        text-align: center;
+        transition-property: all;
+        transition-duration: 0s;
+        transition-delay: 0.25s;
     }
 }
 

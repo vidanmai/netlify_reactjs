@@ -115,7 +115,6 @@ nav {
     justify-items: center;
     text-align: center;
     transition: all 0.2s ease-in-out;
-    padding-top: 1rem;
 }
 
 /* For tablets and smaller (tablets, phones, 768px and down) */
@@ -144,14 +143,12 @@ nav {
 
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 992px) and (orientation: portrait) {
 
     .links a {
         height: fit-content;
         margin: 1rem;
-    }
-    .showNav, .links {
-        padding: 1rem 0;
+        margin-top: 2rem;
     }
 
     .scrollable {
@@ -159,6 +156,10 @@ nav {
         overflow-y: scroll;
         -webkit-overflow-scrolling: touch;
     }
+}
+
+@media only screen and (max-width: 992px) and (orientation: landscape) {
+
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
