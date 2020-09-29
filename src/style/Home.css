@@ -62,6 +62,10 @@
     padding: 4rem;
 }
 
+.left {
+    text-align: left;
+}
+
 .bestillInfo {
     background-color: #eeeeee;
     color: black;
@@ -75,6 +79,10 @@
     width: 100%;
     text-align: center;
     color: black;
+}
+
+.avdelinger .case {
+    margin-top: 1rem;
 }
 
 .avdelinger hr {
@@ -269,7 +277,7 @@
 
     .bestillInfo {
         grid-column: 1 / 5;
-        margin: 1rem;
+        margin: 1.2rem;
     }
     
     .landingInfo {

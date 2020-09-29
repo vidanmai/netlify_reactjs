@@ -11,7 +11,7 @@ class Home extends React.Component {
     return (
       <div className="case">
         <div className="infoBanner">
-          <p className="dark-grey-text">Vi serverer kun takeaway på avdelingene våre</p>
+          <p className="dark-grey-text">For å hindre spredning av Covid-19 serverer vi kun takeaway på restaurantene våre</p>
           <Link to="/meny">
             <button className="bambooButton">Meny</button>
           </Link>
@@ -22,25 +22,15 @@ class Home extends React.Component {
           </div>
           <div className="landingInfo">
             <div className="info">
-              <h2 className="orangeBorder">Bamboo Sagene</h2>
+              <h2 className="orangeBorder">Nyhet!</h2>
               <br />
-              <h3>Åpningstider: </h3>
-              <p>
-                <br />
-                Mandag - Fredag:
-                <br />
-                12:00 - 22:00
-                <br />
-                <br />
-                Lørdag og Søndag:
-                <br />
-                13:00 - 22:00
-                <br />
-                <br />
-              </p>
-              <p className="orangeBorder">
-                  Kjøkkenet stenger <strong>21:45</strong> hele uken
-                </p>
+              <p>Vi har åpnet en ny restaurant på Uranienborg!</p>
+              <br />
+              <p><b>Telefon:</b> 92 22 65 88</p>
+              <p><b>Adresse:</b> Uranieborgveien 7B, 0351 Oslo</p>
+              <p><b>Åpningstider:</b> Man-fre: 11.00 – 21.00 / Lør-søn: 13.00 – 21.00</p>
+              <br />
+              <p class="orangeBorder">Siste takeaway bestilling er 20:45</p>
             </div>
           </div>
         </div>
@@ -58,7 +48,7 @@ class Home extends React.Component {
           </div>
         </div>
         <div className="avdelinger">
-          <h1 className="dark-grey-text">Våre Avdelinger</h1>
+          <h1 className="dark-grey-text">Våre Restauranter</h1>
           <br />
           <hr />
           <div className="avdelingGrid">

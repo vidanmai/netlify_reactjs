@@ -8,6 +8,7 @@ import Shop from './components/Shop';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
 import ScrollToTop from './components/ScrollToTop';
+import ErrorPage from './components/ErrorPage';
 import './App.css';
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
             <Route path="/info" exact component={Info} />
             <Route path="/shop" component={Shop} />
             <Route path="/kontakt" component={Contact} />
+            <Route component={ErrorPage}/>
           </Switch>
           <ScrollToTop/>
           <Footer />
