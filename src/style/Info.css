@@ -1,0 +1,40 @@
+#infoGrid {
+    background-color:#0c0c0c;
+    display: grid;
+    width: 90%;
+    grid-template-columns: 0.75fr 1fr;
+    grid-gap: 2rem;
+    padding: 2rem;
+    color: white;
+    margin: 0 auto;
+}
+
+.case {
+    margin: 1rem 0;
+}
+
+#infoImg {
+    padding-bottom: 2rem 0;
+}
+
+#visjon {
+    padding: 1rem;
+    margin: 0 auto;
+    width: 90%;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #infoGrid {
+        grid-template-columns: auto;
+        margin-top: 30%;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 996px) and (orientation:landscape) {
+    #infoGrid {
+        margin-top: 12%;
+    }
+}

@@ -56,7 +56,7 @@
 }
 
 .info {
-    background-color: black;
+    background-color: #0c0c0c;
     color: white;
     text-align: center;
     padding: 4rem;
@@ -192,7 +192,7 @@
     }
 
     .info {
-        background-color: black;
+        background-color: #0c0c0c;
         color: white;
         text-align: center;
         padding: 2rem 1rem 3rem 1rem;

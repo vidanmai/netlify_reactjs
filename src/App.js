@@ -17,7 +17,6 @@ function App() {
     <Router>
       <div className="App">
         <Nav />
-        <div className="main">
           <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/meny" exact component={Menu} />
@@ -26,9 +25,8 @@ function App() {
             <Route path="/kontakt" component={Contact} />
             <Route component={ErrorPage}/>
           </Switch>
-          <ScrollToTop/>
           <Footer />
-        </div>
+          <ScrollToTop/>
       </div>
     </Router>
   );
