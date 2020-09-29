@@ -1,5 +1,5 @@
 import React from 'react';
-import '../style/Menu.css';
+import './style/Menu.css';
 import AllergenButton from './AllergenButton';
 import MenuList from './MenuList';
 import { allergenDescriptions } from './Allergener';
@@ -18,7 +18,6 @@ class Menu extends React.Component {
         this.sorterAllergener = this.sorterAllergener.bind(this);
         this.openFilter = this.openFilter.bind(this);
     }
-
 
     fjernAllergen(allergen) {
         if (this.state.allergenList.includes(allergen)) {

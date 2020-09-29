@@ -1,8 +1,8 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import "../style/Nav.css";
-import logo from "../img/bamboo_logo.png";
-import NavMenuButton from "./NavMenuButton";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './style/Nav.css';
+import logo from './img/bamboo_logo.png';
+import NavMenuButton from './NavMenuButton';
 import NavLinks from './NavLinks';
 
 // Style for Links
