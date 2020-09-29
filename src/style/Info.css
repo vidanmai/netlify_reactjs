@@ -1,16 +1,12 @@
 #infoGrid {
-    background-color:#0c0c0c;
     display: grid;
     width: 90%;
-    grid-template-columns: 0.75fr 1fr;
+    grid-template-columns: 0.6fr 1fr;
     grid-gap: 2rem;
     padding: 2rem;
     color: white;
-    margin: 0 auto;
-}
-
-.case {
-    margin: 1rem 0;
+    margin: 1rem auto;
+    letter-spacing: 1px;
 }
 
 #infoImg {
@@ -18,9 +14,10 @@
 }
 
 #visjon {
-    padding: 1rem;
+    padding: 2rem;
     margin: 0 auto;
     width: 90%;
+    background-color: #0c0c0c;
 }
 
 
@@ -28,13 +25,11 @@
 @media only screen and (max-width: 600px) {
     #infoGrid {
         grid-template-columns: auto;
-        margin-top: 30%;
         width: 100%;
+        grid-gap: 0.5rem;
     }
-}
 
-@media only screen and (max-width: 996px) and (orientation:landscape) {
-    #infoGrid {
-        margin-top: 12%;
+    #visjon {
+        width: 100%;
     }
 }

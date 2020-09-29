@@ -5,7 +5,7 @@ import tableDinner from '../img/bamboo_tabledinner_2.jpg';
 class Info extends React.Component {
     render() {
         return (
-            <div className="case">
+            <div className="case" id="infoMain">
                     <div id="infoGrid">
                         <img src={tableDinner} alt="" class="responsiveImg" id="infoImg"/>
                         <div id="visjon">
