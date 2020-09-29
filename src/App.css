@@ -21,6 +21,7 @@ body {
 .case {
     width: 100%;
     min-height: 100vh;
+    margin-top: 13vh;
 }
 
 .container {
@@ -158,11 +159,6 @@ body {
     }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-
-}
-
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 1024px) {
 
@@ -182,6 +178,31 @@ body {
         margin: 0 auto;
         text-align: center;
         transition: height 0.25s ease-in-out;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .case {
+        margin-top: 10vh;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .case {
+        margin-top: 10vh;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .case {
+        margin-top: 8%;
+    }
+}
+
+@media only screen and (max-width: 996px) and (orientation: landscape) {
+    .case {
+        margin-top: 20vh;
     }
 }
 
