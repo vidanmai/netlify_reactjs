@@ -6,17 +6,17 @@ class Shop extends React.Component {
         return (
             <div className="case">
                 <div className="container">
-                    <h1 className="dark-grey-text">Bestill og hent</h1>
+                    <h1 className="dark-grey-text orangeBorder">Bestill takeaway</h1>
                     <br />
                     <div className="shops">
                         <div className="shop">
                             <div className="shopGrid">
                                 <div className="shopHeader">
-                                    <h2>Bamboo Sagene</h2>
+                                    <h2 className="dark-grey-text">Bamboo Sagene</h2>
                                 </div>
                                 <div className="shopLink">
                                     <a href="https://www.bamboosagene.no/">
-                                        <button className="bambooButton">Bamboo Sagene</button>
+                                        <button className="bambooButton2">Bamboo Sagene</button>
                                     </a>
                                 </div>
                             </div>
@@ -24,11 +24,11 @@ class Shop extends React.Component {
                         <div className="shop">
                             <div className="shopGrid">
                                 <div className="shopHeader">
-                                    <h2>Bamboo Bjerke</h2>
+                                    <h2 className="dark-grey-text">Bamboo Bjerke</h2>
                                 </div>
                                 <div className="shopLink">
                                     <a href="https://bamboobjerke.no/">
-                                        <button className="bambooButton">
+                                        <button className="bambooButton2">
                                             Bamboo Bjerke
                             </button>
                                     </a>

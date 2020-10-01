@@ -65,6 +65,12 @@ body {
     padding-bottom: 7px;
 }
 
+.orangeBorderFit {
+    border-bottom: 3px solid #e74222;
+    padding-bottom: 7px;
+    width: fit-content;
+}
+
 .bambooButton, .bambooButton2 {
     padding: 1rem;
     margin-top: 1rem;

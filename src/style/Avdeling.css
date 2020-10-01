@@ -1,3 +1,7 @@
+h1 {
+    font-size: 2rem;
+}
+
 .shopGrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -13,12 +17,25 @@
     margin: auto 0;
 }
 
-.shopGrid .bambooButton {
-}
-
-.shopGrid h2 {
-    color: #404040;
-}
-
 .shopGrid .shopLink {
+}
+
+.shopGrid .bambooButton2 {
+    margin: auto 0;
+    text-align: center;
+    width: 100%;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .shopGrid {
+        grid-template-columns: auto;
+    }
+    .shopHeader {
+        text-align: center;
+    }
+
+    .shopGrid .shopLink {
+        width: 100%;
+    }
 }

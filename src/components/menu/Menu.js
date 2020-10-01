@@ -72,7 +72,7 @@ class Menu extends React.Component {
         return (
             <div className="case">
                 <div className="container dark-grey-text">
-                    <h1>Meny</h1>
+                    <h1 class="orangeBorder">Meny</h1>
                     <div className="meny">
                         <div className="sageneMeny">
                             <div className="allergenSeksjon">

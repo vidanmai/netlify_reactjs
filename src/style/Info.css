@@ -6,16 +6,18 @@
     color: white;
     letter-spacing: 1px;
     margin: 0 auto;
+    margin-top: 2rem;
 }
 
 #infoImg {
     padding-bottom: 2rem 0;
+    margin: 0;
 }
 
 #visjon {
     padding: 2rem;
     margin: 0 auto;
-    width: 90%;
+    width: 100%;
     background-color: #0c0c0c;
 }
 
@@ -25,7 +27,6 @@
     #infoGrid {
         grid-template-columns: auto;
         width: 100%;
-        grid-gap: 0.5rem;
         padding: 1rem 0;
     }
 
