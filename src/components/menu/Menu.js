@@ -72,7 +72,7 @@ class Menu extends React.Component {
         return (
             <div className="case">
                 <div className="container dark-grey-text">
-                    <h1 class="orangeBorder">Meny</h1>
+                    <h1 className="orangeBorder">Meny</h1>
                     <div className="meny">
                         <div className="sageneMeny">
                             <div className="allergenSeksjon">
@@ -80,7 +80,7 @@ class Menu extends React.Component {
                                     <div className="filterTitle">
                                         <h3>Filter</h3>
                                     </div>
-                                    <div class="filterToggle">
+                                    <div className="filterToggle">
                                         <span id="toggleSymbol"></span>
                                     </div>
                                 </div>

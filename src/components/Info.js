@@ -7,10 +7,10 @@ class Info extends React.Component {
         return (
             <div className="case" id="infoMain">
                 <div id="infoGrid">
-                    <img src={tableDinner} alt="" class="responsiveImg" id="infoImg" />
+                    <img src={tableDinner} alt="" className="responsiveImg" id="infoImg" />
                     <div id="visjon">
                         <span id="visjonTekst">
-                            <h1 class="dark-grey-text orangeBorder">Om Bamboo</h1>
+                            <h1 className="dark-grey-text orangeBorder">Om Bamboo</h1>
                             <br />
                             <p>
                                 Visjonen vår er å tilby kunder en smakebit av populære retter fra det asiatiske kjøkkenet.

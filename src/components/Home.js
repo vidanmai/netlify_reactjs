@@ -32,7 +32,7 @@ class Home extends React.Component {
               <p><b>Adresse:</b> Uranieborgveien 7B, 0351 Oslo</p>
               <p><b>Åpningstider:</b> Man-fre: 11.00 – 21.00 / Lør-søn: 13.00 – 21.00</p>
               <br />
-              <p class="orangeBorder">Siste takeaway bestilling er 20:45</p>
+              <p className="orangeBorder">Siste takeaway bestilling er 20:45</p>
             </div>
           </div>
         </div>
