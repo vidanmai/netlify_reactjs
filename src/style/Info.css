@@ -1,24 +1,24 @@
 #infoGrid {
     display: grid;
     width: 100%;
-    grid-template-columns: 0.6fr 1fr;
-    grid-gap: 2rem;
-    color: white;
+    grid-template-columns: 1fr 1fr;
     letter-spacing: 1px;
-    margin: 0 auto;
-    margin-top: 2rem;
+    place-content: center;
+    color: black;
 }
 
 #infoImg {
     padding-bottom: 2rem 0;
     margin: 0;
+    
 }
 
 #visjon {
-    padding: 2rem;
-    margin: 0 auto;
-    width: 100%;
-    background-color: #0c0c0c;
+    padding: 4rem;
+    margin: auto;
+    width: 80%;
+    height: 100%;
+    font-size: 0.9rem;
 }
 
 
@@ -27,10 +27,10 @@
     #infoGrid {
         grid-template-columns: auto;
         width: 100%;
-        padding: 1rem 0;
     }
 
     #visjon {
         width: 100%;
+        padding: 2rem;
     }
 }

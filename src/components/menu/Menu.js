@@ -76,12 +76,12 @@ class Menu extends React.Component {
                     <div className="meny">
                         <div className="sageneMeny">
                             <div className="allergenSeksjon">
-                                <div className="filterHeader">
+                                <div className="filterHeader" onClick={this.openFilter}>
                                     <div className="filterTitle">
                                         <h3>Filter</h3>
                                     </div>
-                                    <div>
-                                        <span className="filterToggle" onClick={this.openFilter}>{this.state.filterInput}</span>
+                                    <div class="filterToggle">
+                                        <span id="toggleSymbol"></span>
                                     </div>
                                 </div>
                                 <div className={this.state.filterName}>

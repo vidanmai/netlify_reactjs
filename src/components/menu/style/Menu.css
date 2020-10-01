@@ -5,6 +5,7 @@
     padding: 10px;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    margin-top: 1rem;
     overflow: hidden;
     transition: all 0.2s ease-in-out;
 }
@@ -20,24 +21,21 @@
 .allergenSeksjon {
     margin: 2.5rem 0;
     transition: all 0.2s ease-in-out;
+    border: 2px solid #404040;
+    padding: 1rem;
+    background-color: #FAFAFA;
 }
 
 .filterHeader {
     display: grid;
-    grid-template-columns: 10% 90%;
+    grid-template-columns: 95% 5%;
+    cursor: pointer;
 }
 
 .filterTitle {
     display: grid;
     place-items: center;
     width: 10%;
-}
-
-.filterToggle {
-    cursor: pointer;
-    font-size: 2rem;
-    float: right;
-    padding: 5px;
 }
 
 #resetAllergen {
@@ -121,4 +119,9 @@
 }
 
 @media only screen and (max-width: 768px) {
+    .allergenSeksjon {
+        padding: 0.75rem;
+        position: sticky;
+        top: 85px;
+    }
 }

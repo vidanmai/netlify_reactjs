@@ -33,9 +33,9 @@ function getDish(dish, allergenList, kategoriNavn) {
     }
 }
 
-function menuSection(dishes, allergenList, kategoriNavn) {
+function menuSection(color, dishes, allergenList, kategoriNavn) {
     return (<div className="menuSection">
-        <h2>{kategoriNavn}</h2>
+        <h2 style={{backgroundColor: color, color: "white", padding: "1rem"}}>{kategoriNavn}</h2>
         {dishes.map(dish => {
             return getDish(dish, allergenList, kategoriNavn);
         })}
@@ -47,8 +47,8 @@ class MenuList extends React.Component {
     render() {
         return (
             <div>
-                {menuSection(dishes, this.props.allergenList, 'Foretter')}
-                {menuSection(dishes, this.props.allergenList, 'Thailandsk')}
+                {menuSection("blue", dishes, this.props.allergenList, 'Foretter')}
+                {menuSection("blue", dishes, this.props.allergenList, 'Thailandsk')}
             </div>
         );
     }
