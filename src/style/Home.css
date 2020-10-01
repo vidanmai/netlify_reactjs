@@ -1,3 +1,11 @@
+.merknadBanner {
+    background-color: #eee9d2;
+    color: black;
+    margin-top: 0;
+    font-size: 1.1rem;
+    padding: 0.5rem;
+}
+
 .infoBanner {
     width: 100%;
     text-align: center;

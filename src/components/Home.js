@@ -10,8 +10,10 @@ class Home extends React.Component {
   render() {
     return (
       <div className="case">
+        <div className="merknadBanner">
+          <p>MERKNAD: Med hensyn til Covid-19 serverer vi kun takeaway på restaurantene våre</p>
+        </div>
         <div className="infoBanner">
-          <p className="dark-grey-text">For å hindre spredning av Covid-19 serverer vi kun takeaway på restaurantene våre</p>
           <Link to="/meny">
             <button className="bambooButton">Meny</button>
           </Link>
