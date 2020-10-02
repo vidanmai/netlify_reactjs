@@ -3,6 +3,8 @@ import './style/Menu.css';
 import AllergenButton from './AllergenButton';
 import MenuList from './MenuList';
 import { allergenDescriptions } from './Allergener';
+import plusIcon from './icons/plus-icon.svg';
+import minusIcon from './icons/minus-icon.svg';
 
 class Menu extends React.Component {
     constructor(props) {
@@ -10,7 +12,7 @@ class Menu extends React.Component {
         this.state = {
             allergenList: [],
             toggleFilter: false,
-            filterInput: '+',
+            filterInput: plusIcon,
             filterName: 'hideFilter'
         };
         this.fjernAllergen = this.fjernAllergen.bind(this);
@@ -55,14 +57,14 @@ class Menu extends React.Component {
             console.log("Toggled filter");
             this.setState({
                 toggleFilter: !this.state.toggleFilter,
-                filterInput: '-',
+                filterInput: minusIcon,
                 filterName: 'buttonGrid',
             });
         } else {
             console.log("Disabled filter");
             this.setState({
                 toggleFilter: !this.state.toggleFilter,
-                filterInput: '+',
+                filterInput: plusIcon,
                 filterName: 'hideFilter',
             });
         }
@@ -81,7 +83,7 @@ class Menu extends React.Component {
                                         <h3>Filter</h3>
                                     </div>
                                     <div className="filterToggle">
-                                        <span id="toggleSymbol"></span>
+                                        <img src={this.state.filterInput} alt=""/>
                                     </div>
                                 </div>
                                 <div className={this.state.filterName}>

@@ -26,7 +26,7 @@ class Contact extends React.Component {
               <li>92 26 69 89</li>
               <br />
               <b>Åpningstider</b>
-              <li>Mandag - Fredag: 12:00 - 21:00</li>
+              <li>Mandag - Fredag: 11:00 - 21:00</li>
               <li>Lørdag og Søndag: 13:00 - 21:00</li>
             </ul>
             <br /><br />
@@ -39,7 +39,7 @@ class Contact extends React.Component {
               <li>92 22 65 88</li>
               <br />
               <b>Åpningstider</b>
-              <li>Mandag - Fredag: 12:00 - 21:00</li>
+              <li>Mandag - Fredag: 11:00 - 21:00</li>
               <li>Lørdag og Søndag: 13:00 - 21:00</li>
             </ul>
             <br /><br />
