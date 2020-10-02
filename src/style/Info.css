@@ -8,17 +8,25 @@
 }
 
 #infoImg {
-    padding-bottom: 2rem 0;
     margin: 0;
-    
+    height: auto;
+    max-width: 100%;
+    display: block;
+}
+
+.imgContainer {
+    min-height: 399px;
 }
 
 #visjon {
+    display: block;
     padding: 4rem;
     margin: auto;
-    width: 80%;
+    width: 100%;
     height: 100%;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
+    background-color: #0c0c0c;
+    color: white;
 }
 
 
