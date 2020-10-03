@@ -7,7 +7,7 @@ class Info extends React.Component {
         return (
             <div className="case" id="infoMain">
                 <div id="infoGrid">
-                    <div className="imgContainer">
+                    <div id="imgContainer">
                         <img src={tableDinner} alt="" className="responsiveImg" id="infoImg"/>
                     </div>
                     <div id="visjon">

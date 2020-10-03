@@ -6,6 +6,7 @@ nav {
     background-color: #0c0c0c;
     overflow: hidden;
     z-index: 999;
+    min-height: 85px;
     transition: all 0.2s ease-in-out;
 }
 
@@ -42,6 +43,8 @@ nav {
 .logo {
     float: left;
     margin-left: 2%;
+    width: 180px;
+    height: 74px;
 }
 
 .logo img {
@@ -141,10 +144,11 @@ nav {
     }
 }
 
-
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 992px) and (orientation: portrait) {
-
+    nav {
+        height: 84px;
+    }
     .links {
         margin: 1.5rem;
     }
