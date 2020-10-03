@@ -6,7 +6,7 @@ nav {
     background-color: #0c0c0c;
     overflow: hidden;
     z-index: 999;
-    min-height: 85px;
+    min-height: 84px;
     transition: all 0.2s ease-in-out;
 }
 
@@ -14,6 +14,7 @@ nav {
     display: grid;
     grid-template-columns: 6fr 1fr;
     width: 100%;
+    height: 85px;
 }
 
 .link {
@@ -43,8 +44,6 @@ nav {
 .logo {
     float: left;
     margin-left: 2%;
-    width: 180px;
-    height: 74px;
 }
 
 .logo img {
@@ -54,10 +53,7 @@ nav {
 }
 
 #menuButton {
-    display: grid;
-    align-items: center;
-    overflow: hidden;
-    width: 100%;
+    margin: auto;
 }
 
 #menu {
@@ -68,15 +64,7 @@ nav {
     border: 2px solid #e74222;
     padding: 5px;
     cursor: pointer;
-    margin: 0 auto;
     overflow: hidden;
-    
-}
-
-.nav-links:last-child {
-    display: block;
-    float: right;
-    margin-right: 20px;
 }
 
 .line {
