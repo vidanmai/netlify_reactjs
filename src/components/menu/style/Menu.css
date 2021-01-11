@@ -30,13 +30,14 @@
     display: grid;
     grid-template-columns: 95% 5%;
     cursor: pointer;
-    padding: 1rem;
+    padding: 0.35rem;
 }
 
 .filterTitle {
     display: grid;
     place-items: center;
     width: 10%;
+    font-size: 0.8rem;
 }
 
 .filterToggle {
@@ -46,8 +47,8 @@
     -moz-user-select: none; /* Old versions of Firefox */
     -ms-user-select: none; /* Internet Explorer/Edge */
     user-select: none;
-    width: 22px;
-    height: 22px;
+    width: 16px;
+    height: 16px;
     float: right;
 }
 
